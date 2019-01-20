@@ -13,7 +13,7 @@ local/
 
 
 
-*.lay
+#*.lay
 *.zip
 *.bak
 *.lnk
