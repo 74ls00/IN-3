@@ -228,69 +228,113 @@ DIN A4, landscape with extra doc field</description>
 <part name="N26" library="in3" deviceset="IN-3" device=""/>
 <part name="N27" library="in3" deviceset="IN-3" device=""/>
 <part name="N28" library="in3" deviceset="IN-3" device=""/>
+<part name="N29" library="in3" deviceset="IN-3" device=""/>
+<part name="N30" library="in3" deviceset="IN-3" device=""/>
+<part name="N31" library="in3" deviceset="IN-3" device=""/>
+<part name="N32" library="in3" deviceset="IN-3" device=""/>
+<part name="N33" library="in3" deviceset="IN-3" device=""/>
+<part name="N34" library="in3" deviceset="IN-3" device=""/>
+<part name="N35" library="in3" deviceset="IN-3" device=""/>
+<part name="N36" library="in3" deviceset="IN-3" device=""/>
+<part name="N37" library="in3" deviceset="IN-3" device=""/>
+<part name="N38" library="in3" deviceset="IN-3" device=""/>
+<part name="N39" library="in3" deviceset="IN-3" device=""/>
+<part name="N40" library="in3" deviceset="IN-3" device=""/>
+<part name="N41" library="in3" deviceset="IN-3" device=""/>
+<part name="N42" library="in3" deviceset="IN-3" device=""/>
+<part name="N43" library="in3" deviceset="IN-3" device=""/>
+<part name="N44" library="in3" deviceset="IN-3" device=""/>
+<part name="N45" library="in3" deviceset="IN-3" device=""/>
+<part name="N46" library="in3" deviceset="IN-3" device=""/>
+<part name="N47" library="in3" deviceset="IN-3" device=""/>
+<part name="N48" library="in3" deviceset="IN-3" device=""/>
+<part name="N49" library="in3" deviceset="IN-3" device=""/>
+<part name="N50" library="in3" deviceset="IN-3" device=""/>
+<part name="N51" library="in3" deviceset="IN-3" device=""/>
+<part name="N52" library="in3" deviceset="IN-3" device=""/>
+<part name="N53" library="in3" deviceset="IN-3" device=""/>
+<part name="N54" library="in3" deviceset="IN-3" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="N1" gate="G$1" x="78.74" y="170.18"/>
-<instance part="N2" gate="G$1" x="91.44" y="160.02"/>
-<instance part="N3" gate="G$1" x="104.14" y="149.86"/>
-<instance part="N4" gate="G$1" x="104.14" y="129.54"/>
-<instance part="N5" gate="G$1" x="104.14" y="99.06"/>
-<instance part="N6" gate="G$1" x="104.14" y="78.74"/>
-<instance part="N7" gate="G$1" x="104.14" y="48.26"/>
-<instance part="N8" gate="G$1" x="91.44" y="58.42"/>
-<instance part="N9" gate="G$1" x="78.74" y="68.58"/>
-<instance part="N10" gate="G$1" x="78.74" y="88.9"/>
-<instance part="N11" gate="G$1" x="78.74" y="119.38"/>
-<instance part="N12" gate="G$1" x="78.74" y="139.7"/>
-<instance part="N13" gate="G$1" x="91.44" y="109.22"/>
-<instance part="FRAME1" gate="G$1" x="332.74" y="187.96" rot="R180"/>
-<instance part="FRAME1" gate="G$2" x="231.14" y="-2.54"/>
-<instance part="N14" gate="G$1" x="134.62" y="170.18"/>
-<instance part="N15" gate="G$1" x="147.32" y="160.02"/>
-<instance part="N16" gate="G$1" x="160.02" y="149.86"/>
-<instance part="N17" gate="G$1" x="160.02" y="129.54"/>
-<instance part="N18" gate="G$1" x="160.02" y="99.06"/>
-<instance part="N19" gate="G$1" x="160.02" y="78.74"/>
-<instance part="N20" gate="G$1" x="160.02" y="48.26"/>
-<instance part="N21" gate="G$1" x="147.32" y="58.42"/>
-<instance part="N22" gate="G$1" x="134.62" y="68.58"/>
-<instance part="N23" gate="G$1" x="134.62" y="88.9"/>
-<instance part="N24" gate="G$1" x="134.62" y="119.38"/>
-<instance part="N25" gate="G$1" x="134.62" y="139.7"/>
-<instance part="N26" gate="G$1" x="147.32" y="109.22"/>
-<instance part="N27" gate="G$1" x="185.42" y="129.54" rot="R90"/>
-<instance part="N28" gate="G$1" x="185.42" y="78.74" rot="R90"/>
+<instance part="N1" gate="G$1" x="40.64" y="170.18"/>
+<instance part="N2" gate="G$1" x="53.34" y="160.02"/>
+<instance part="N3" gate="G$1" x="66.04" y="149.86"/>
+<instance part="N4" gate="G$1" x="66.04" y="129.54"/>
+<instance part="N5" gate="G$1" x="66.04" y="99.06"/>
+<instance part="N6" gate="G$1" x="66.04" y="78.74"/>
+<instance part="N7" gate="G$1" x="66.04" y="48.26"/>
+<instance part="N8" gate="G$1" x="53.34" y="58.42"/>
+<instance part="N9" gate="G$1" x="40.64" y="68.58"/>
+<instance part="N10" gate="G$1" x="40.64" y="88.9"/>
+<instance part="N11" gate="G$1" x="40.64" y="119.38"/>
+<instance part="N12" gate="G$1" x="40.64" y="139.7"/>
+<instance part="N13" gate="G$1" x="53.34" y="109.22"/>
+<instance part="FRAME1" gate="G$1" x="2.54" y="2.54"/>
+<instance part="FRAME1" gate="G$2" x="177.8" y="2.54"/>
+<instance part="N14" gate="G$1" x="96.52" y="170.18"/>
+<instance part="N15" gate="G$1" x="109.22" y="160.02"/>
+<instance part="N16" gate="G$1" x="121.92" y="149.86"/>
+<instance part="N17" gate="G$1" x="121.92" y="129.54"/>
+<instance part="N18" gate="G$1" x="121.92" y="99.06"/>
+<instance part="N19" gate="G$1" x="121.92" y="78.74"/>
+<instance part="N20" gate="G$1" x="121.92" y="48.26"/>
+<instance part="N21" gate="G$1" x="109.22" y="58.42"/>
+<instance part="N22" gate="G$1" x="96.52" y="68.58"/>
+<instance part="N23" gate="G$1" x="96.52" y="88.9"/>
+<instance part="N24" gate="G$1" x="96.52" y="119.38"/>
+<instance part="N25" gate="G$1" x="96.52" y="139.7"/>
+<instance part="N26" gate="G$1" x="109.22" y="109.22"/>
+<instance part="N27" gate="G$1" x="147.32" y="129.54" rot="R90"/>
+<instance part="N28" gate="G$1" x="147.32" y="78.74" rot="R90"/>
+<instance part="N29" gate="G$1" x="172.72" y="170.18"/>
+<instance part="N30" gate="G$1" x="185.42" y="160.02"/>
+<instance part="N31" gate="G$1" x="198.12" y="149.86"/>
+<instance part="N32" gate="G$1" x="198.12" y="129.54"/>
+<instance part="N33" gate="G$1" x="198.12" y="99.06"/>
+<instance part="N34" gate="G$1" x="198.12" y="78.74"/>
+<instance part="N35" gate="G$1" x="198.12" y="48.26"/>
+<instance part="N36" gate="G$1" x="185.42" y="58.42"/>
+<instance part="N37" gate="G$1" x="172.72" y="68.58"/>
+<instance part="N38" gate="G$1" x="172.72" y="88.9"/>
+<instance part="N39" gate="G$1" x="172.72" y="119.38"/>
+<instance part="N40" gate="G$1" x="172.72" y="139.7"/>
+<instance part="N41" gate="G$1" x="185.42" y="109.22"/>
+<instance part="N42" gate="G$1" x="228.6" y="170.18"/>
+<instance part="N43" gate="G$1" x="241.3" y="160.02"/>
+<instance part="N44" gate="G$1" x="254" y="149.86"/>
+<instance part="N45" gate="G$1" x="254" y="129.54"/>
+<instance part="N46" gate="G$1" x="254" y="99.06"/>
+<instance part="N47" gate="G$1" x="254" y="78.74"/>
+<instance part="N48" gate="G$1" x="254" y="48.26"/>
+<instance part="N49" gate="G$1" x="241.3" y="58.42"/>
+<instance part="N50" gate="G$1" x="228.6" y="68.58"/>
+<instance part="N51" gate="G$1" x="228.6" y="88.9"/>
+<instance part="N52" gate="G$1" x="228.6" y="119.38"/>
+<instance part="N53" gate="G$1" x="228.6" y="139.7"/>
+<instance part="N54" gate="G$1" x="241.3" y="109.22"/>
 </instances>
 <busses>
 <bus name="B$1">
 <segment>
-<wire x1="119.38" y1="48.26" x2="119.38" y2="180.34" width="0.762" layer="92"/>
-<wire x1="119.38" y1="180.34" x2="63.5" y2="180.34" width="0.762" layer="92"/>
-<wire x1="63.5" y1="180.34" x2="63.5" y2="48.26" width="0.762" layer="92"/>
-<wire x1="119.38" y1="180.34" x2="175.26" y2="180.34" width="0.762" layer="92"/>
-<wire x1="175.26" y1="180.34" x2="175.26" y2="48.26" width="0.762" layer="92"/>
-<wire x1="175.26" y1="180.34" x2="195.58" y2="180.34" width="0.762" layer="92"/>
-<wire x1="195.58" y1="180.34" x2="195.58" y2="48.26" width="0.762" layer="92"/>
+<wire x1="81.28" y1="48.26" x2="81.28" y2="180.34" width="0.762" layer="92"/>
+<wire x1="81.28" y1="180.34" x2="25.4" y2="180.34" width="0.762" layer="92"/>
+<wire x1="25.4" y1="180.34" x2="25.4" y2="48.26" width="0.762" layer="92"/>
+<wire x1="81.28" y1="180.34" x2="137.16" y2="180.34" width="0.762" layer="92"/>
+<wire x1="137.16" y1="180.34" x2="137.16" y2="48.26" width="0.762" layer="92"/>
+<wire x1="137.16" y1="180.34" x2="157.48" y2="180.34" width="0.762" layer="92"/>
+<wire x1="157.48" y1="180.34" x2="157.48" y2="48.26" width="0.762" layer="92"/>
+<wire x1="157.48" y1="180.34" x2="213.36" y2="180.34" width="0.762" layer="92"/>
+<wire x1="213.36" y1="180.34" x2="213.36" y2="48.26" width="0.762" layer="92"/>
+<wire x1="213.36" y1="180.34" x2="269.24" y2="180.34" width="0.762" layer="92"/>
+<wire x1="269.24" y1="180.34" x2="269.24" y2="48.26" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
 <nets>
-<net name="N$10" class="0">
-<segment>
-<pinref part="N11" gate="G$1" pin="A"/>
-<wire x1="86.36" y1="119.38" x2="111.76" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="N10" gate="G$1" pin="A"/>
-<wire x1="86.36" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
