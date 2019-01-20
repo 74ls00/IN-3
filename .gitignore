@@ -2,7 +2,7 @@ git.txt
 1.txt
 mod.txt
 
-
+#proteus*
 
 
 
@@ -11,7 +11,8 @@ backup/
 
 local/
 
-
+*.pdsbak
+*.workspace
 
 #*.lay
 *.zip

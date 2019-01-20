@@ -76,7 +76,7 @@
 <dimension x1="27" y1="50" x2="81" y2="-59" x3="54" y3="55" layer="20" dtype="horizontal"/>
 <dimension x1="89" y1="-58" x2="143" y2="51" x3="116" y3="55" layer="20" dtype="horizontal"/>
 <dimension x1="-27" y1="57" x2="197" y2="55" x3="85" y3="70" layer="20" dtype="horizontal"/>
-<circle x="143" y="-31" radius="10" width="0.4064" layer="21"/>
+<circle x="139" y="-55" radius="10" width="0.4064" layer="21"/>
 </plain>
 <libraries>
 <library name="in3">
@@ -510,14 +510,14 @@ Based on the following sources:&lt;p&gt;
 <element name="N52" library="in3" package="IN-3" value="IN-3" x="156" y="0" rot="R225"/>
 <element name="N53" library="in3" package="IN-3" value="IN-3" x="156" y="14" rot="R225"/>
 <element name="N54" library="in3" package="IN-3" value="IN-3" x="170" y="0"/>
-<element name="IC1" library="74xx-eu" package="SO16" value="74HC595D" x="185" y="-27" rot="MR270"/>
-<element name="DD1" library="atmel" package="TQFP32-08" value="MEGA8-AI" x="116" y="16" rot="MR270">
-<attribute name="OC_NEWARK" value="73M8863" x="116" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MPN" value="ATMEGA8-16AU" x="116" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="MF" value="" x="116" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="OC_FARNELL" value="9171371" x="116" y="16" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="IC1" library="74xx-eu" package="SO16" value="74HC595D" x="181" y="-52" rot="MR270"/>
+<element name="DD1" library="atmel" package="TQFP32-08" value="MEGA8-AI" x="118" y="-48" rot="MR270">
+<attribute name="OC_NEWARK" value="73M8863" x="118" y="-48" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MPN" value="ATMEGA8-16AU" x="118" y="-48" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MF" value="" x="118" y="-48" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="OC_FARNELL" value="9171371" x="118" y="-48" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="IC3" library="74xx-eu" package="SO16" value="74HC595D" x="159" y="23" rot="MR270"/>
+<element name="IC3" library="74xx-eu" package="SO16" value="74HC595D" x="162" y="-49" rot="MR270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -526,19 +526,19 @@ Based on the following sources:&lt;p&gt;
 <contactref element="DD1" pad="5"/>
 <contactref element="DD1" pad="21"/>
 <contactref element="IC3" pad="8"/>
-<wire x1="116.4" y1="20.2926" x2="162.0734" y2="18.555" width="0" layer="19" extent="16-16"/>
-<wire x1="114.8" y1="20.2926" x2="116.4" y2="20.2926" width="0" layer="19" extent="16-16"/>
-<wire x1="115.6" y1="11.7074" x2="116.4" y2="20.2926" width="0" layer="19" extent="16-16"/>
-<wire x1="188.0734" y1="-31.445" x2="162.0734" y2="18.555" width="0" layer="19" extent="16-16"/>
+<wire x1="118.4" y1="-43.7074" x2="165.0734" y2="-53.445" width="0" layer="19" extent="16-16"/>
+<wire x1="116.8" y1="-43.7074" x2="118.4" y2="-43.7074" width="0" layer="19" extent="16-16"/>
+<wire x1="117.6" y1="-52.2926" x2="118.4" y2="-43.7074" width="0" layer="19" extent="16-16"/>
+<wire x1="184.0734" y1="-56.445" x2="165.0734" y2="-53.445" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="VCC">
 <contactref element="IC1" pad="16"/>
 <contactref element="DD1" pad="4"/>
 <contactref element="DD1" pad="6"/>
 <contactref element="IC3" pad="16"/>
-<wire x1="117.2" y1="20.2926" x2="155.9266" y2="27.445" width="0" layer="19" extent="16-16"/>
-<wire x1="115.6" y1="20.2926" x2="117.2" y2="20.2926" width="0" layer="19" extent="16-16"/>
-<wire x1="181.9266" y1="-22.555" x2="155.9266" y2="27.445" width="0" layer="19" extent="16-16"/>
+<wire x1="119.2" y1="-43.7074" x2="158.9266" y2="-44.555" width="0" layer="19" extent="16-16"/>
+<wire x1="117.6" y1="-43.7074" x2="119.2" y2="-43.7074" width="0" layer="19" extent="16-16"/>
+<wire x1="177.9266" y1="-47.555" x2="158.9266" y2="-44.555" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="AVCC">
 <contactref element="DD1" pad="18"/>
