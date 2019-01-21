@@ -44,6 +44,11 @@ void setup(){
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT); 
   pinMode(clockPin, OUTPUT);
+
+Serial.begin(9600);
+
+//int analogValue = 0; 
+  
 }
 
 void loop(){
@@ -67,7 +72,7 @@ uint16_t temp=digit[0]>>8;
 resultat[1]=temp+(digit[1]&B111)<<5;
 */
 
-
+/*
 uint64_t chislo=0;
 
 chislo+=digit[1];
@@ -77,7 +82,7 @@ chislo<<13;
 chislo+=digit[3]; 
 chislo<<13;
 chislo+=digit[4]; 
-
+*/
 
 
 
@@ -89,10 +94,15 @@ chislo+=digit[4];
           shiftOut(dataPin, clockPin, MSBFIRST, digit[x3]);
           shiftOut(dataPin, clockPin, MSBFIRST, digit[x4]);
 */
-          shiftOutL(dataPin, clockPin, MSBFIRST, digit[x1]);
-          shiftOutL(dataPin, clockPin, MSBFIRST, digit[x2]);
-          shiftOutL(dataPin, clockPin, MSBFIRST, digit[x3]);
+          //shiftOutL(dataPin, clockPin, MSBFIRST, digit[x1]);
+         // shiftOutL(dataPin, clockPin, MSBFIRST, digit[x2]);
+         // shiftOutL(dataPin, clockPin, MSBFIRST, digit[x3]);
+
+         
           shiftOutL(dataPin, clockPin, MSBFIRST, digit[x4]);
+Serial.println(digit[x4], BIN);
+          
+          //shiftOutL(dataPin, clockPin, MSBFIRST, digit[x4>>8]);
 
           digitalWrite(latchPin, HIGH);
 
