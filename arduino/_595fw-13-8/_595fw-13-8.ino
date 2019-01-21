@@ -88,21 +88,35 @@ chislo+=digit[4];
 
      
           digitalWrite(latchPin, LOW);
-     /*
-          shiftOut(dataPin, clockPin, MSBFIRST, digit[x1]);
+     
+         shiftOut(dataPin, clockPin, MSBFIRST, digit[x1]);
           shiftOut(dataPin, clockPin, MSBFIRST, digit[x2]);
-          shiftOut(dataPin, clockPin, MSBFIRST, digit[x3]);
-          shiftOut(dataPin, clockPin, MSBFIRST, digit[x4]);
-*/
+         shiftOut(dataPin, clockPin, MSBFIRST, digit[x3]);
+
+Serial.println( digit[x4], BIN);
+Serial.println( lowByte(digit[x4]),BIN);
+Serial.println( highByte(digit[x4]),BIN);
+
+
+    
+          shiftOut(dataPin, clockPin, MSBFIRST, lowByte(digit[x4]));
+    shiftOut(dataPin, clockPin, MSBFIRST, highByte(digit[x4]));
+          
+        //  shiftOut(dataPin, clockPin, MSBFIRST, digit[x4]>>8);
+
+
+
+
+
+
+
           //shiftOutL(dataPin, clockPin, MSBFIRST, digit[x1]);
          // shiftOutL(dataPin, clockPin, MSBFIRST, digit[x2]);
          // shiftOutL(dataPin, clockPin, MSBFIRST, digit[x3]);
+          //shiftOutL(dataPin, clockPin, MSBFIRST, digit[x4]);
 
-         
-          shiftOutL(dataPin, clockPin, MSBFIRST, digit[x4]);
-Serial.println(digit[x4], BIN);
           
-          //shiftOutL(dataPin, clockPin, MSBFIRST, digit[x4>>8]);
+       
 
           digitalWrite(latchPin, HIGH);
 
@@ -111,6 +125,7 @@ Serial.println(digit[x4], BIN);
   
 }//конец цикла
 
+/*
 void shiftOutL(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint16_t val)
 {
   int8_t i;
@@ -125,6 +140,6 @@ void shiftOutL(uint8_t dataPin, uint8_t clockPin, uint8_t bitOrder, uint16_t val
     digitalWrite(clockPin, LOW);    
   }
 }
-
+*/
 
 
