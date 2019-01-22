@@ -1,5 +1,7 @@
 //светодиодный индикатор "Алаев и Ко" Лаб. alaev.org https://forum.alaev.club/viewtopic.php?t=317
 
+// http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
+
 int latchPin = 10;//сигнал Ready
 int clockPin = 12;//сигнал Clock
 int dataPin = 11;//cигнал Data
@@ -87,59 +89,25 @@ void loop(){
           x2 = (pot/10)%10;  //  7
           x1 = pot%10;       //  8
 
-//http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
+
 
 uint64_t chislo=0;
 
-chislo+=digit[9];
-
-//chislo+=6147;  //1  1100000000011
-
-
-
-unsigned long long1 = (unsigned long)((chislo & 0xFFFF0000) >> 16 );
-unsigned long long2 = (unsigned long)((chislo & 0x0000FFFF));
-String hex = String(long1, HEX) + String(long2, HEX); // six octets
-
-
+chislo+=digit[x4]; // левый знак
 chislo = chislo<<13;
-chislo+=digit[0];
-//chislo+=0;
-//chislo+=0; // 0
 
+chislo+=digit[x3];
 chislo = chislo<<13;
-chislo+=digit[8]; // 3  разряд
-//chislo+=6371; // 1100011100011
-//chislo+=8191; // 1111111111111
 
-chislo = chislo<<13; // 4 разряд. тогда 4 разряд справа,
-// тогда побитность... наоборот
-chislo+=digit[7]; // 4 разряд
+chislo+=digit[x2]; 
+chislo = chislo<<13; 
 
-//chislo+=5881; // 1011011111001
-
+chislo+=digit[x1]; // правый знак
 chislo = chislo<<4; // 4 неиспользуемых порта
 
 
-unsigned long long3 = (unsigned long)((chislo & 0xFFFF0000) >> 16 );
-unsigned long long4 = (unsigned long)((chislo & 0x0000FFFF));
-String hex2 = String(long3, HEX) + String(long4, HEX); // six octets
-Serial.println(hex2);
 
-/*
-uint64_t chislo=0;
-uint8_t resultat[7];
-for (byte i=0; i<4; i++){
-chislo<<13;
-chislo+=digit[i];
-}
-*/
-     
           digitalWrite(latchPin, LOW);
-
-//Serial.println(lowByte(chislo),BIN);
-
-
 
 
 
