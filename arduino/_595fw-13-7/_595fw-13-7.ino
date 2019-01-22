@@ -1,6 +1,7 @@
 //светодиодный индикатор "Алаев и Ко" Лаб. alaev.org https://forum.alaev.club/viewtopic.php?t=317
-
-// http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
+//                               https://forum.alaev.club/viewtopic.php?f=16&t=317&p=22692#p22692
+//
+//мои темы  http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
 
 int latchPin = 10;//сигнал Ready
 int clockPin = 12;//сигнал Clock
@@ -9,14 +10,14 @@ int dataPin = 11;//cигнал Data
 int display[4];
 //uint64_t chislo=0;
      
-float displays = 1112; //величина, выводимая на индикатор = 4 цифры
+int displays = 1234; //величина, выводимая на индикатор = 4 цифры
 int tmp;
 int x1;
 int x2;
 int x3;
 int x4;
 
-int pot;
+//int pot;
 
 //const byte digit[] =      //13 segment digits in bits
 const unsigned int digit[] = {
@@ -78,103 +79,37 @@ Serial.begin(9600);
 void loop(){
   
 
-
-
-
-          
-          pot = int(displays); //округлёное до целых число выводимое на экран 5678
+       //   pot = int(displays); //округлёное до целых число выводимое на экран 5678
       
-          x4 = pot/1000;     //старший разряд, число делёное на 1000 5
-          x3 = (pot/100)%10; //  6
-          x2 = (pot/10)%10;  //  7
-          x1 = pot%10;       //  8
+          x4 = displays/1000;     //старший разряд, число делёное на 1000 5
+          x3 = (displays/100)%10; //  6
+          x2 = (displays/10)%10;  //  7
+          x1 = displays%10;       //  8
 
 
 
 uint64_t chislo=0;
 
-chislo+=digit[x4]; // левый знак
-chislo = chislo<<13;
+        chislo+=digit[x4]; // левый знак
+        chislo = chislo<<13;
 
-chislo+=digit[x3];
-chislo = chislo<<13;
+        chislo+=digit[x3];
+        chislo = chislo<<13;
 
-chislo+=digit[x2]; 
-chislo = chislo<<13; 
+        chislo+=digit[x2]; 
+        chislo = chislo<<13; 
 
-chislo+=digit[x1]; // правый знак
-chislo = chislo<<4; // 4 неиспользуемых порта
-
-
+        chislo+=digit[x1]; // правый знак
+        chislo = chislo<<4; // 4 неиспользуемых порта
 
           digitalWrite(latchPin, LOW);
 
-
-
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-chislo = chislo>>8;
-
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-
-
-/*
-tmp = lowByte(chislo);
-chislo = chislo>>8;
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, MSBFIRST, lowByte(chislo));
-Serial.println(tmp,BIN);
-shiftOut(dataPin, clockPin, MSBFIRST, tmp);
-
-
-tmp = lowByte(chislo);
-chislo = chislo>>8;
-Serial.println(lowByte(chislo),BIN);
-shiftOut(dataPin, clockPin, MSBFIRST, lowByte(chislo));
-Serial.println(tmp,BIN);
-shiftOut(dataPin, clockPin, MSBFIRST, tmp);
-*/
-
-
-
-
-//---------------------------------
-
-
+for (int i=0; i < 7; i++){
+      shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
+      chislo = chislo>>8;
+   }
 
           digitalWrite(latchPin, HIGH);
-
 
   delay(500);  
 }//конец цикла

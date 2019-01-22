@@ -9,7 +9,7 @@ proteus0
 
 backup/
 
-local/
+old
 
 *.pdsbak
 *.workspace
@@ -58,9 +58,10 @@ local/
 /proteus/74HC595-13-8.pdsprj
 /proteus/74HC595-13-8-6.pdsprj
 /proteus/74HC595-13-8-6-2.pdsprj
-/proteus/reg.ods
+
 /proteus/Новый текстовый документ.txt
 /proteus/74HC595-13-8.pdsprj
 /proteus/74HC595-13-8-6.pdsprj
 /proteus/74HC595-13-8-6-2.pdsprj
 /proteus/74HC595-13-6.pdsprj
+/lay/ИН-3 сегмент - копия.lay
