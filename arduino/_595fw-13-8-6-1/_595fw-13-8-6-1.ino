@@ -50,7 +50,7 @@ const unsigned int digit[] = {
                //BIN SWAP     //http://mrtranslate.ru/tools/revert.html
   8190, //0     1111111111110  
   1984, //1     0011111000000  
-  8061, //2     1111101111101  
+  8061, //2     1111101110101  
 //8181, //3     1111111110101
   8177, //3 alt 1111111110001  
   6087, //4     1011111000111
@@ -92,60 +92,36 @@ void loop(){
 //http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
 
 uint64_t chislo=0;
-//chislo+=digit[1];
-//chislo+=8191;4145
-//chislo+=4145;
-//chislo+=124;  //1  0000001111100
-chislo+=6147;  //1  1100000000011
+
+chislo+=digit[9];
+
+//chislo+=6147;  //1  1100000000011
 
 
 
 unsigned long long1 = (unsigned long)((chislo & 0xFFFF0000) >> 16 );
 unsigned long long2 = (unsigned long)((chislo & 0x0000FFFF));
 String hex = String(long1, HEX) + String(long2, HEX); // six octets
-//Serial.println(hex);
+
 
 chislo = chislo<<13;
-// chislo+=digit[2];
+chislo+=digit[0];
 //chislo+=0;
-chislo+=0; // 0
+//chislo+=0; // 0
 
 chislo = chislo<<13;
-//chislo+=digit[3]; // 3  разряд
+chislo+=digit[8]; // 3  разряд
 //chislo+=6371; // 1100011100011
-chislo+=8191; // 1111111111111
+//chislo+=8191; // 1111111111111
 
 chislo = chislo<<13; // 4 разряд. тогда 4 разряд справа,
-// тогда побитность...
-//chislo+=digit[4]; // 4 разряд
-//chislo+=8191; // 4 разряд
-//chislo+=5887;
-//chislo+=5881; // 1011011111001
+// тогда побитность... наоборот
+chislo+=digit[7]; // 4 разряд
 
-//chislo+=7680; //1111000000000
-chislo+=1984;
+//chislo+=5881; // 1011011111001
 
 chislo = chislo<<4; // 4 неиспользуемых порта
 
-/*
-  6147         0            8191         7680
-
-                 0000000000000             1111000000000
-    1100000000011             1111111111111
-
-00001100        10000000        11111111        0000000
-        00000001        00000011        11111110*/
-        /*
-  6147         0            8191         7680
-
-                 0000000000000             1111000000000
-    1100000000011             1111111111111
-
-00001100        10000000        11111111        0000000
-        00000001        00000011        11111110
-
-    11000000        00000000        11111111        0000 0000
-            00011000        00111111        11100000 */
 
 unsigned long long3 = (unsigned long)((chislo & 0xFFFF0000) >> 16 );
 unsigned long long4 = (unsigned long)((chislo & 0x0000FFFF));
@@ -170,12 +146,9 @@ chislo+=digit[i];
 
 
 
-//tmp = lowByte(chislo);
-//chislo = chislo>>8;
 Serial.println(lowByte(chislo),BIN);
 shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-//Serial.println(tmp,BIN);
- // shiftOut(dataPin, clockPin, MSBFIRST, tmp);
+
 
 chislo = chislo>>8;
 
@@ -237,7 +210,7 @@ shiftOut(dataPin, clockPin, MSBFIRST, tmp);
           digitalWrite(latchPin, HIGH);
 
 
-  delay(2000);  
+  delay(500);  
 }//конец цикла
 
 
