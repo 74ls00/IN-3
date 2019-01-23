@@ -91,7 +91,7 @@ Wire.write(0x7);
 Wire.write(0x10);
 Wire.endTransmission();
 
-  rtc.adjust(DateTime(2015, 11, 27, 20, 0, 1)); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+  rtc.adjust(DateTime(2015, 11, 27,      1, 35, 1)); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
   
 }/*---------------------------------------------------------------------------*/
@@ -125,23 +125,35 @@ void loop(){
 if (timemode == 0){ //Режим часов 23:59
  displays = (now.hour()*100)+(now.minute());
  
- x[3] = displays/1000;
- x[2] = (displays/100); //%10;
- x[1] = (displays/10); //%10;
- x[0] = displays; //%10; 
+ x[4] = displays/1000;
+ x[3] = (displays/100)%10;
+ x[2] = (displays/10)%10;
+ x[1] = displays%10; 
 
 Serial.println(displays, DEC);
+Serial.print(x[4], DEC);
+Serial.print(':');
+Serial.print(x[3], DEC);
+Serial.print(':');
+Serial.print(x[2], DEC);
+Serial.print(':');
+Serial.print(x[1], DEC);
+Serial.print(':');
+
+Serial.print(x[0], DEC);
+//Serial.print(':');
+Serial.println();
 
 
  if (displays > 959) {
-  x[0] = displays;
+  x[4] = displays/1000;
  }
  else {
-  x[0] = digit[10];
+  x[4] = digit[10];
  }
 //x[4] = digit[10];
 
- Serial.println(x[0], BIN);
+ Serial.println(x[4], BIN);
  //Serial.println(digit[0], BIN);
   
 }
@@ -155,10 +167,26 @@ Serial.println(displays, DEC);
 }*/
 
 
+//x[4] = digit[10];
+
+// Serial.println(x[4], BIN);
+
+
+
+
+
 // Индикация
 for (int i=0; i < 4; i++){
   for ( int n = 0; n < 13; n++)  {
+
+
+
+    
     digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
+
+
+
+  
     digitalWrite(clockPin, HIGH);
     digitalWrite(clockPin, LOW);    
   }
