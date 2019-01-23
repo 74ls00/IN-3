@@ -72,7 +72,7 @@ void setup(){
 
 Serial.begin(9600);
 
-//int analogValue = 0; 
+
   
 }
 
@@ -86,7 +86,7 @@ void loop(){
           x2 = (displays/10)%10;  //  7
           x1 = displays%10;       //  8
 
-
+/*
 
 uint64_t chislo=0;
 
@@ -104,16 +104,77 @@ uint64_t chislo=0;
 
           digitalWrite(latchPin, LOW);
 
+*/
+/*
 for (int i=0; i < 7; i++){
-      shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
+      //shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
+      shiftOut(dataPin, clockPin, LSBFIRST, chislo);
       chislo = chislo>>8;
    }
+*/
 
-          digitalWrite(latchPin, HIGH);
+//
+/*
+for (int i=0; i < 7; i++){
+
+  for (int n = 0; n < 8; n++)  {
+    //if (bitOrder == LSBFIRST)
+      digitalWrite(dataPin, !!(chislo & (1 << n)));
+
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+     
+      chislo = chislo>>8;
+   }
+   */
+//
+
+/*
+for (int i=1; i < 4; i++){
+
+  for ( int n = 0; n < 13; n++)  {
+    digitalWrite(dataPin, !!(digit[x & i] & (1 << n)));
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+
+}*/
+
+
+
+   
+  for ( int n = 0; n < 13; n++)  {
+    digitalWrite(dataPin, !!(digit[x1] & (1 << n)));
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+     
+  for ( int n = 0; n < 13; n++)  {
+    digitalWrite(dataPin, !!(digit[x2] & (1 << n)));
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+
+  for ( int n = 0; n < 13; n++)  {
+    digitalWrite(dataPin, !!(digit[x3] & (1 << n)));
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+
+  for ( int n = 0; n < 13; n++)  {
+    digitalWrite(dataPin, !!(digit[x4] & (1 << n)));
+    digitalWrite(clockPin, HIGH);
+    digitalWrite(clockPin, LOW);    
+  }
+
+
+
+
+
+
+    digitalWrite(latchPin, HIGH);
 
   delay(500);  
 }//конец цикла
-
-
-
 
