@@ -13,7 +13,7 @@ int latchPin = 10;//сигнал Ready
 int clockPin = 12;//сигнал Clock
 int dataPin = 11;//cигнал Data
 
-int display[4];
+//int display[4];
      
 int displays = 1234; //величина, выводимая на индикатор = 4 цифры
 //int tmp;
@@ -65,14 +65,15 @@ const unsigned int digit[] = {
 //8128, //7     1111111000000
   8128, //7 alt 1111111000000
   8191, //8     1111111111111
-  8183  //9     1111111110111 
+  8183, //9     1111111110111 
+  0     //нет знака
   
 };
 
 RTC_DS1307 rtc; // "rtc" используется в начале функций, которые прилагаются с библиотекой
 
 int x[4] = {(displays%10),((displays/10)%10),((displays/100)%10),(displays/1000)};
-int timemode = 1;
+int timemode = 0;
 
 /*---------------------------------------------------------------------------*/
 void setup(){
@@ -90,7 +91,7 @@ Wire.write(0x7);
 Wire.write(0x10);
 Wire.endTransmission();
 
-
+  rtc.adjust(DateTime(2015, 11, 27, 20, 0, 1)); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
   
 }/*---------------------------------------------------------------------------*/
@@ -101,8 +102,9 @@ void loop(){
 
 
 
- DateTime now = rtc.now();
- 
+  DateTime now = rtc.now();
+
+ /*
   Serial.print(now.year(), DEC);     // выводим данные на экран
   Serial.print('/');
   Serial.print(now.month(), DEC);
@@ -117,11 +119,31 @@ void loop(){
   Serial.println();
  
   Serial.println();
-
+*/
 
 
 if (timemode == 0){ //Режим часов 23:59
-  x[2]=0;
+ displays = (now.hour()*100)+(now.minute());
+ 
+ x[3] = displays/1000;
+ x[2] = (displays/100); //%10;
+ x[1] = (displays/10); //%10;
+ x[0] = displays; //%10; 
+
+Serial.println(displays, DEC);
+
+
+ if (displays > 959) {
+  x[0] = displays;
+ }
+ else {
+  x[0] = digit[10];
+ }
+//x[4] = digit[10];
+
+ Serial.println(x[0], BIN);
+ //Serial.println(digit[0], BIN);
+  
 }
 
 
