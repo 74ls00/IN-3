@@ -3,19 +3,24 @@
 //
 //мои темы  http://arduino.ru/forum/pesochnitsa-razdel-dlya-novichkov/razdelit-chislo-na-8-bitnye
 
+#include <Wire.h>
+#include "RTClib.h"
+
+
+
+
 int latchPin = 10;//сигнал Ready
 int clockPin = 12;//сигнал Clock
 int dataPin = 11;//cигнал Data
 
 int display[4];
-//uint64_t chislo=0;
      
 int displays = 1234; //величина, выводимая на индикатор = 4 цифры
-int tmp;
-int x1;
-int x2;
-int x3;
-int x4;
+//int tmp;
+//int x1;
+//int x2;
+//int x3;
+//int x4;
 
 //int pot;
 
@@ -64,117 +69,79 @@ const unsigned int digit[] = {
   
 };
 
+RTC_DS1307 rtc; // "rtc" используется в начале функций, которые прилагаются с библиотекой
+
+int x[4] = {(displays%10),((displays/10)%10),((displays/100)%10),(displays/1000)};
+int timemode = 1;
+
+/*---------------------------------------------------------------------------*/
 void setup(){
 
   pinMode(latchPin, OUTPUT);
   pinMode(dataPin, OUTPUT); 
   pinMode(clockPin, OUTPUT);
 
-Serial.begin(9600);
+Serial.begin(9600); //debug
+
+
+//Запуск секундного выхода часов
+Wire.beginTransmission(0x68);
+Wire.write(0x7);
+Wire.write(0x10);
+Wire.endTransmission();
+
 
 
   
-}
-
+}/*---------------------------------------------------------------------------*/
 void loop(){
   
 
        //   pot = int(displays); //округлёное до целых число выводимое на экран 5678
-      
-          x4 = displays/1000;     //старший разряд, число делёное на 1000 5
-          x3 = (displays/100)%10; //  6
-          x2 = (displays/10)%10;  //  7
-          x1 = displays%10;       //  8
 
-/*
 
-uint64_t chislo=0;
 
-        chislo+=digit[x4]; // левый знак
-        chislo = chislo<<13;
+ DateTime now = rtc.now();
+ 
+  Serial.print(now.year(), DEC);     // выводим данные на экран
+  Serial.print('/');
+  Serial.print(now.month(), DEC);
+  Serial.print('/');
+  Serial.print(now.day(), DEC);
+  Serial.print(' ');
+  Serial.print(now.hour(), DEC);
+  Serial.print(':');
+  Serial.print(now.minute(), DEC);
+  Serial.print(':');
+  Serial.print(now.second(), DEC);
+  Serial.println();
+ 
+  Serial.println();
 
-        chislo+=digit[x3];
-        chislo = chislo<<13;
 
-        chislo+=digit[x2]; 
-        chislo = chislo<<13; 
 
-        chislo+=digit[x1]; // правый знак
-        chislo = chislo<<4; // 4 неиспользуемых порта
+if (timemode == 0){ //Режим часов 23:59
+  x[2]=0;
+}
 
-          digitalWrite(latchPin, LOW);
 
-*/
-/*
-for (int i=0; i < 7; i++){
-      //shiftOut(dataPin, clockPin, LSBFIRST, lowByte(chislo));
-      shiftOut(dataPin, clockPin, LSBFIRST, chislo);
-      chislo = chislo>>8;
-   }
-*/
 
-//
-/*
-for (int i=0; i < 7; i++){
 
-  for (int n = 0; n < 8; n++)  {
-    //if (bitOrder == LSBFIRST)
-      digitalWrite(dataPin, !!(chislo & (1 << n)));
 
-    digitalWrite(clockPin, HIGH);
-    digitalWrite(clockPin, LOW);    
-  }
-     
-      chislo = chislo>>8;
-   }
-   */
-//
-
-/*
-for (int i=1; i < 4; i++){
-
-  for ( int n = 0; n < 13; n++)  {
-    digitalWrite(dataPin, !!(digit[x & i] & (1 << n)));
-    digitalWrite(clockPin, HIGH);
-    digitalWrite(clockPin, LOW);    
-  }
-
+/*if (timemode == 1){
+  x[2]=9;
 }*/
 
 
-
-   
+// Индикация
+for (int i=0; i < 4; i++){
   for ( int n = 0; n < 13; n++)  {
-    digitalWrite(dataPin, !!(digit[x1] & (1 << n)));
+    digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
     digitalWrite(clockPin, HIGH);
     digitalWrite(clockPin, LOW);    
   }
-     
-  for ( int n = 0; n < 13; n++)  {
-    digitalWrite(dataPin, !!(digit[x2] & (1 << n)));
-    digitalWrite(clockPin, HIGH);
-    digitalWrite(clockPin, LOW);    
-  }
-
-  for ( int n = 0; n < 13; n++)  {
-    digitalWrite(dataPin, !!(digit[x3] & (1 << n)));
-    digitalWrite(clockPin, HIGH);
-    digitalWrite(clockPin, LOW);    
-  }
-
-  for ( int n = 0; n < 13; n++)  {
-    digitalWrite(dataPin, !!(digit[x4] & (1 << n)));
-    digitalWrite(clockPin, HIGH);
-    digitalWrite(clockPin, LOW);    
-  }
-
-
-
-
-
-
+}
     digitalWrite(latchPin, HIGH);
-
-  delay(500);  
+ delay(500);  
 }//конец цикла
 
