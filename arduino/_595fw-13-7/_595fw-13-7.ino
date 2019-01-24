@@ -54,6 +54,7 @@ const unsigned int digit[] = {
   512,  //9     0001000000000 */
 
                //BIN SWAP     //http://mrtranslate.ru/tools/revert.html
+  0,    //нет знака
   8190, //0     1111111111110  
   1984, //1     0011111000000  
   8061, //2     1111101110101  
@@ -68,7 +69,7 @@ const unsigned int digit[] = {
   8183, //9     1111111110111 
   //0     //нет знака 0111111111111
   //                   111111111111
-  4095,
+ // 4095,
   
 };
 
@@ -126,36 +127,37 @@ void loop(){
 
 if (timemode == 0){ //Режим часов 23:59
  displays = (now.hour()*100)+(now.minute());
- 
- x[4] = displays/1000;
- x[3] = (displays/100)%10;
- x[2] = (displays/10)%10;
- x[1] = displays%10; 
+
+ // добавляем +1 к числу
+ x[3] = displays/1000+1;
+ x[2] = (displays/100)%10+1;
+ x[1] = (displays/10)%10+1;
+ x[0] = displays%10+1; 
 
 
 Serial.println(displays, DEC);
-Serial.print(x[4], DEC);
-Serial.print(':');
 Serial.print(x[3], DEC);
 Serial.print(':');
 Serial.print(x[2], DEC);
 Serial.print(':');
 Serial.print(x[1], DEC);
+Serial.print(':');
+Serial.print(x[0], DEC);
 Serial.println();
 
 //Serial.print(x[0], DEC);
 //Serial.print(':');
 //Serial.println();
 
-/*
+
  if (displays > 959) {
-  x[4] = displays/1000;
+  x[3] = displays/1000+1;
  }
  else {
-  x[4] = digit[10];
- }*/
+  x[3] = digit[0];
+ }
  
-x[4] = digit[10];
+//x[3] = digit[10];
 
 Serial.println(digit[10], BIN);
 
@@ -196,6 +198,11 @@ for (int i=0; i < 4; i++){         ///////
 // }
  //   else {
 
+
+Serial.print(i, DEC);
+Serial.print("..");
+Serial.print(digit[x[i]], BIN);
+Serial.println();
  
           digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
   //  }
