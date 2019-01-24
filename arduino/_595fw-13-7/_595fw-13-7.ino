@@ -66,7 +66,9 @@ const unsigned int digit[] = {
   8128, //7 alt 1111111000000
   8191, //8     1111111111111
   8183, //9     1111111110111 
-  0     //нет знака
+  //0     //нет знака 0111111111111
+  //                   111111111111
+  4095,
   
 };
 
@@ -91,7 +93,7 @@ Wire.write(0x7);
 Wire.write(0x10);
 Wire.endTransmission();
 
-  rtc.adjust(DateTime(2015, 11, 27,      1, 35, 1)); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
+  rtc.adjust(DateTime(2015, 11, 27,      0, 35, 1)); // задаём год/ месяц/ дата/ часы/ минуты/ секунды
 
   
 }/*---------------------------------------------------------------------------*/
@@ -130,6 +132,7 @@ if (timemode == 0){ //Режим часов 23:59
  x[2] = (displays/10)%10;
  x[1] = displays%10; 
 
+
 Serial.println(displays, DEC);
 Serial.print(x[4], DEC);
 Serial.print(':');
@@ -138,26 +141,31 @@ Serial.print(':');
 Serial.print(x[2], DEC);
 Serial.print(':');
 Serial.print(x[1], DEC);
-Serial.print(':');
-
-Serial.print(x[0], DEC);
-//Serial.print(':');
 Serial.println();
 
+//Serial.print(x[0], DEC);
+//Serial.print(':');
+//Serial.println();
 
+/*
  if (displays > 959) {
   x[4] = displays/1000;
  }
  else {
   x[4] = digit[10];
- }
-//x[4] = digit[10];
+ }*/
+ 
+x[4] = digit[10];
 
- Serial.println(x[4], BIN);
+Serial.println(digit[10], BIN);
+
+
+
+
+// Serial.println(x[4], BIN);
  //Serial.println(digit[0], BIN);
   
-}
-
+} // end timemode 0
 
 
 
@@ -176,22 +184,34 @@ Serial.println();
 
 
 // Индикация
-for (int i=0; i < 4; i++){
-  for ( int n = 0; n < 13; n++)  {
+for (int i=0; i < 4; i++){         ///////
+  for ( int n = 0; n < 13; n++)  { //////
+
+
+//Serial.println(displays);
+
+
+// if (displays > 959) {
+  // digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
+// }
+ //   else {
+
+ 
+          digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
+  //  }
 
 
 
     
-    digitalWrite(dataPin, !!(digit[x[i]] & (1 << n)));
 
-
+//Serial.println(x[4], DEC);
 
   
     digitalWrite(clockPin, HIGH);
     digitalWrite(clockPin, LOW);    
   }
-}
+} //конец for индикации
     digitalWrite(latchPin, HIGH);
- delay(500);  
+ delay(1500);  
 }//конец цикла
 
