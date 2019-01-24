@@ -7,6 +7,7 @@ proteus0
 
 
 
+*.hex
 backup/
 
 old
@@ -66,3 +67,4 @@ old
 /proteus/74HC595-13-6.pdsprj
 /lay/ИН-3 сегмент - копия.lay
 /proteus/.~lock.reg.ods#
+/arduino/_595fw-13-7/*.hex
