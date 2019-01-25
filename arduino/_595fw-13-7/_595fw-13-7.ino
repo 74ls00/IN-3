@@ -147,19 +147,19 @@ if (timemode == 0){ //Режим часов 23:59
 if (timemode == 1){
   DateTime now = rtc.now();
   displays = now.year();
- x[3] = displays/1000;
- x[2] = (displays/100)%10;
- x[1] = (displays/10)%10;
- x[0] = displays%10; 
+ x[0] = displays/1000;
+ x[1] = (displays/100)%10;
+ x[2] = (displays/10)%10;
+ x[3] = displays%10; 
 } // end timemode 1
 
 if (timemode == 2){
   DateTime now = rtc.now();
   displays = (now.month()*100)+(now.day());
- x[3] = displays/1000;
- x[2] = (displays/100)%10;
- x[1] = (displays/10)%10;
- x[0] = displays%10; 
+ x[0] = displays/1000;
+ x[1] = (displays/100)%10;
+ x[2] = (displays/10)%10;
+ x[3] = displays%10; 
 } // end timemode 1
 
 
