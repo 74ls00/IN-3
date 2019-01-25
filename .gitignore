@@ -2,24 +2,11 @@ git.txt
 1.txt
 mod.txt
 
-#proteus*
-proteus0
-
-
-
-*.hex
 backup/
+old/
 
-old
-
-*.pdsbak
-*.workspace
-
-#*.lay
-*.zip
+*.7z
 *.bak
-*.lnk
-*.log
 *.b##
 *.b#1
 *.b#2
@@ -30,6 +17,7 @@ old
 *.b#7
 *.b#8
 *.b#9
+*.hex
 *.s##
 *.s#1
 *.s#2
@@ -40,6 +28,9 @@ old
 *.s#7
 *.s#8
 *.s#9
+#*.lay
+*.lnk
+*.log
 *.l#1
 *.l#2
 *.l#3
@@ -49,9 +40,14 @@ old
 *.l#7
 *.l#8
 *.l#9
+*.ods#
+*.pdsbak
 *.pro
 *.job
-/proteus0
+*.workspace
+*.zip
+
+
 /arduino/_595fw-13-8-6
 /arduino/_595fw-13-8-6-1
 /arduino/_595fw-13-8
@@ -66,5 +62,5 @@ old
 /proteus/74HC595-13-8-6-2.pdsprj
 /proteus/74HC595-13-6.pdsprj
 /lay/ИН-3 сегмент - копия.lay
-/proteus/.~lock.reg.ods#
-/arduino/_595fw-13-7/*.hex
+
+
