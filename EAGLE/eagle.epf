@@ -10,21 +10,70 @@ AutoSaveProject=1
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/74xx-eu.lbr"
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/atmel.lbr"
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/battery.lbr"
+UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/diode.lbr"
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/rcl.lbr"
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/supply1.lbr"
 UsedLibrary="G:/Programs/ProgramsT/EAGLE/EAGLE-6.3.0/lbr/eagle/transistor-npn.lbr"
 UsedLibrary="in3.lbr"
 UsedLibrary="G:/home/Documents/Projects/EAGLE/MyLbr/Мои библиотеки/frames.lbr"
 UsedLibrary="G:/home/Documents/Projects/EAGLE/MyLbr/eagle-lib-master/ds1307_pcf8583.lbr"
+UsedLibrary="in3-mod.lbr"
 
 [Win_1]
+Type="Control Panel"
+Loc="221 374 1078 822"
+State=0
+Number=0
+
+[Win_2]
+Type="Schematic Editor"
+Loc="332 293 931 692"
+State=1
+Number=1
+File="in3watch.sch"
+View="-26.05 -67.301 357.385 179.192"
+WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
+PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
+PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
+ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
+ViaDrills=" 0.5 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6"
+HoleDrills=" 0.5 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6"
+TextSizes=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778"
+PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
+PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
+MiterRadiuss=" 0.254 0.3175 0.635 1.27 2.54 1 2 2.5 5 7.5 10 0"
+SmdSizes=" 0.3048 0.1524 0.4064 0.2032 0.6096 0.3048 0.8128 0.4064 1.016 0.508 1.27 0.6604 1.4224 0.7112 1.6764 0.8128 1.778 0.9144 1.9304 0.9652 2.1844 1.0668 2.54 1.27 3.81 1.9304 5.08 2.54 6.4516 3.2512 1.27 0.635"
+WireBend=0
+WireBendSet=31
+WireCap=1
+MiterStyle=0
+PadShape=0
+ViaShape=0
+PolygonPour=0
+PolygonRank=0
+PolygonThermals=1
+PolygonOrphans=0
+TextRatio=8
+PinDirection=3
+PinFunction=0
+PinLength=2
+PinVisible=3
+SwapLevel=0
+ArcDirection=0
+AddLevel=2
+PadsSameType=0
+Layer=91
+Views=" 1: 19.0322 69.4932 259.677 235.294 2: 104.646 60.6338 271.761 175.773 3: -48.3828 -98.1255 503.762 256.824 4: -26.05 -67.301 357.385 179.192"
+Sheet=4
+
+[Win_3]
 Type="Board Editor"
 Loc="332 293 931 692"
 State=1
 Number=2
 File="in3watch.brd"
-View="-170.531 -71.7073 149.871 104.098"
-WireWidths=" 0 0.254 0.3048 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.6096 0.4064"
+View="-90.3201 -36.7249 132.181 85.3623"
+WireWidths=" 0 0.254 0.3048 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.6096"
 PadDiameters=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0 2.3"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
 ViaDiameters=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0 2.3"
@@ -55,53 +104,6 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=16
-
-[Win_2]
-Type="Schematic Editor"
-Loc="332 293 931 692"
-State=1
-Number=1
-File="in3watch.sch"
-View="3.96001 34.3344 270.234 205.51"
-WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
-PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
-PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
-ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
-ViaDrills=" 0.5 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6"
-HoleDrills=" 0.5 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6"
-TextSizes=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778"
-PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
-PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
-MiterRadiuss=" 0.254 0.3175 0.635 1.27 2.54 1 2 2.5 5 7.5 10 0"
-SmdSizes=" 0.3048 0.1524 0.4064 0.2032 0.6096 0.3048 0.8128 0.4064 1.016 0.508 1.27 0.6604 1.4224 0.7112 1.6764 0.8128 1.778 0.9144 1.9304 0.9652 2.1844 1.0668 2.54 1.27 3.81 1.9304 5.08 2.54 6.4516 3.2512 1.27 0.635"
-WireBend=1
-WireBendSet=31
-WireCap=1
-MiterStyle=0
-PadShape=0
-ViaShape=0
-PolygonPour=0
-PolygonRank=0
-PolygonThermals=1
-PolygonOrphans=0
-TextRatio=8
-PinDirection=3
-PinFunction=0
-PinLength=2
-PinVisible=3
-SwapLevel=0
-ArcDirection=0
-AddLevel=2
-PadsSameType=0
-Layer=91
-Views=" 1: -17.7259 -75.4095 328.802 163.343 2: -73.0797 -115.694 425.923 228.11 3: -35.33 -13.5136 348.104 232.979 4: 3.96001 34.3344 270.234 205.51"
-Sheet=4
-
-[Win_3]
-Type="Control Panel"
-Loc="221 374 1078 822"
-State=2
-Number=0
 
 [Desktop]
 Screen="1280 1024"

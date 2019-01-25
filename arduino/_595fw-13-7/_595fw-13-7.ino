@@ -17,7 +17,7 @@ int dotInPin = 2;//cигнал Data
 
 //int display[4];
      
-int displays = 1234; //величина, выводимая на индикатор = 4 цифры
+//int displays = 1234; //величина, выводимая на индикатор = 4 цифры
 //int tmp;
 //int x1;
 //int x2;
@@ -80,7 +80,10 @@ const unsigned int digit[] = {
 
 RTC_DS1307 rtc; // "rtc" используется в начале функций, которые прилагаются с библиотекой
 
+int displays = 1234; //величина, выводимая на индикатор = 4 цифры
 int x[4] = {(displays%10),((displays/10)%10),((displays/100)%10),(displays/1000)};
+
+
 int timemode = 0    ;
 
 /*---------------------------------------------------------------------------*/
@@ -135,10 +138,10 @@ if (timemode == 0){ //Режим часов 23:59
   DateTime now = rtc.now();
   displays = (now.hour()*100)+(now.minute());
   if (displays > 959){x[3] = displays/1000;}
-    else {x[3] = 10;}
- x[2] = (displays/100)%10;
- x[1] = (displays/10)%10;
- x[0] = displays%10; 
+    else {x[0] = 10;}
+ x[1] = (displays/100)%10;
+ x[2] = (displays/10)%10;
+ x[3] = displays%10; 
 } // end timemode 0
 
 if (timemode == 1){
@@ -148,10 +151,20 @@ if (timemode == 1){
  x[2] = (displays/100)%10;
  x[1] = (displays/10)%10;
  x[0] = displays%10; 
-}
+} // end timemode 1
 
-x[3] = 15;
-x[2] = 14;
+if (timemode == 2){
+  DateTime now = rtc.now();
+  displays = (now.month()*100)+(now.day());
+ x[3] = displays/1000;
+ x[2] = (displays/100)%10;
+ x[1] = (displays/10)%10;
+ x[0] = displays%10; 
+} // end timemode 1
+
+
+//x[3] = 12;
+//x[2] = 11;
 
 /*
 Serial.println(displays, DEC);
