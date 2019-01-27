@@ -9702,6 +9702,181 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="in3wlbr">
+<packages>
+<package name="05">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="0.1538" y1="0" x2="3.8462" y2="0" width="0.6096" layer="21"/>
+<pad name="1" x="-0.04" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="4.04" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-0.04" y="0.889" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="07">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-2.6162" y1="0" x2="2.6162" y2="0" width="0.6096" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.6096" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.54" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-3.81" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="3.81" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-2.54" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.7" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="10">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-3.8862" y1="0" x2="3.8862" y2="0" width="0.6096" layer="21"/>
+<wire x1="5.08" y1="0" x2="3.937" y2="0" width="0.6096" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-3.937" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-5.08" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="5.08" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="5" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="12">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-5.1562" y1="0" x2="5.1562" y2="0" width="0.6096" layer="21"/>
+<wire x1="6.35" y1="0" x2="5.207" y2="0" width="0.6096" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.207" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-6.35" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="6.35" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="6.3" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="15">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-6.4262" y1="0" x2="6.4262" y2="0" width="0.6096" layer="21"/>
+<wire x1="7.62" y1="0" x2="6.477" y2="0" width="0.6096" layer="51"/>
+<wire x1="-7.62" y1="0" x2="-6.477" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-7.62" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="7.62" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-5.715" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="7.5999" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="20">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-8.9662" y1="0" x2="8.9662" y2="0" width="0.6096" layer="21"/>
+<wire x1="10.16" y1="0" x2="9.017" y2="0" width="0.6096" layer="51"/>
+<wire x1="-10.16" y1="0" x2="-9.017" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-10.16" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="10.16" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-8.255" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="10.1001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="25">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-11.5062" y1="0" x2="11.5062" y2="0" width="0.6096" layer="21"/>
+<wire x1="12.7" y1="0" x2="11.557" y2="0" width="0.6096" layer="51"/>
+<wire x1="-12.7" y1="0" x2="-11.557" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-12.7" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="12.7" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-10.795" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="12.5999" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+<package name="30">
+<description>&lt;b&gt;JUMPER&lt;/b&gt;</description>
+<wire x1="-14.0462" y1="0" x2="14.0462" y2="0" width="0.6096" layer="21"/>
+<wire x1="15.24" y1="0" x2="14.097" y2="0" width="0.6096" layer="51"/>
+<wire x1="-15.24" y1="0" x2="-14.097" y2="0" width="0.6096" layer="51"/>
+<pad name="1" x="-15.24" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<pad name="2" x="15.24" y="0" drill="0.8128" diameter="1.6002" shape="octagon"/>
+<text x="-13.335" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="15.2001" y="0" size="0.02" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="J">
+<wire x1="-2.54" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.254" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.254" width="0.4064" layer="94"/>
+<text x="-2.54" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="J" prefix="J">
+<description>Bridge</description>
+<gates>
+<gate name="1" symbol="J" x="0" y="0"/>
+</gates>
+<devices>
+<device name="5MM" package="05">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="7MM" package="07">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="10MM" package="10">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12MM" package="12">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="15MM" package="15">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20MM" package="20">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="25MM" package="25">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="30MM" package="30">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9833,7 +10008,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="VD9" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT10" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R19" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R1206W"/>
 <part name="R20" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="VD10" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
@@ -10075,6 +10250,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="J2" library="rcl" deviceset="R-EU_" device="R1206"/>
 <part name="R105" library="rcl" deviceset="R-EU_" device="R1206W" value="10k"/>
 <part name="R109" library="rcl" deviceset="R-EU_" device="R1206W" value="10k"/>
+<part name="J3" library="in3wlbr" deviceset="J" device="5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -10086,7 +10262,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="FRAME2" gate="G$2" x="177.8" y="2.54"/>
 <instance part="DD2" gate="G$1" x="91.44" y="68.58" rot="MR180"/>
 <instance part="DD1" gate="G$1" x="106.68" y="134.62"/>
-<instance part="GND36" gate="1" x="93.98" y="121.92"/>
+<instance part="GND36" gate="1" x="93.98" y="114.3"/>
 <instance part="GND37" gate="1" x="66.04" y="38.1" rot="MR0"/>
 <instance part="ISP" gate="1" x="20.32" y="83.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="24.13" y="91.44" size="1.778" layer="96" rot="R180"/>
@@ -10131,6 +10307,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="J2" gate="G$1" x="25.4" y="58.42" rot="R90"/>
 <instance part="R105" gate="G$1" x="50.8" y="73.66" rot="R90"/>
 <instance part="R109" gate="G$1" x="50.8" y="53.34" rot="R90"/>
+<instance part="J3" gate="1" x="86.36" y="124.46"/>
 </instances>
 <busses>
 </busses>
@@ -10187,7 +10364,17 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="DD1" gate="G$1" pin="GND"/>
 <wire x1="93.98" y1="127" x2="96.52" y2="127" width="0.1524" layer="91"/>
 <pinref part="GND36" gate="1" pin="GND"/>
+<wire x1="93.98" y1="116.84" x2="93.98" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="J3" gate="1" pin="2"/>
+<wire x1="93.98" y1="119.38" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="124.46" x2="93.98" y2="127" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="124.46" x2="93.98" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="119.38" x2="78.74" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="119.38" x2="78.74" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J3" gate="1" pin="1"/>
+<wire x1="78.74" y1="124.46" x2="81.28" y2="124.46" width="0.1524" layer="91"/>
+<junction x="93.98" y="119.38"/>
+<junction x="93.98" y="124.46"/>
 </segment>
 <segment>
 <pinref part="ISP" gate="1" pin="6"/>
@@ -10289,6 +10476,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R109" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="48.26" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
+<junction x="50.8" y="43.18"/>
 </segment>
 </net>
 <net name="+5V" class="0">
