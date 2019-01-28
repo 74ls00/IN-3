@@ -9,9 +9,9 @@
 
 
 
-int latchPin = 10;//сигнал Ready
-int clockPin = 12;//сигнал Clock
-int dataPin = 11;//cигнал Data
+int latchPin = 10; //сигнал Ready // pb2
+int clockPin = 12; //сигнал Clock // pb4 miso
+int dataPin = 11;  //cигнал Data  // pb3 mosi
 
 int dotInPin = 2;//cигнал Data
 
