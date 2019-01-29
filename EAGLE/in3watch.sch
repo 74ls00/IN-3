@@ -10395,7 +10395,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="VD40" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT41" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R81" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R81" library="rcl" deviceset="R-EU_" device="R1206W"/>
 <part name="R82" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="VD41" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
@@ -10451,7 +10451,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="VD51" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT52" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
 <part name="R103" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R104" library="rcl" deviceset="R-EU_" device="0207/12"/>
+<part name="R104" library="rcl" deviceset="R-EU_" device="0207/15"/>
 <part name="GND58" library="supply1" deviceset="GND" device=""/>
 <part name="VD52" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="ISP" library="con-lstb" deviceset="MA03-2" device=""/>
