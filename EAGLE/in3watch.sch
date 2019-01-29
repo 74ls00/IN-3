@@ -10284,27 +10284,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="VD18" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT19" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R37" library="rcl" deviceset="R-EU_" device="0204/7"/>
+<part name="R37" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R38" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="VD19" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT20" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R39" library="rcl" deviceset="R-EU_" device="R1206W"/>
+<part name="R39" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R40" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND21" library="supply1" deviceset="GND" device=""/>
 <part name="VD20" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT21" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R41" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R41" library="rcl" deviceset="R-EU_" device="R1206W"/>
 <part name="R42" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="VD21" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT22" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R43" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R43" library="rcl" deviceset="R-EU_" device="R1206W"/>
 <part name="R44" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="VD22" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT23" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R45" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R45" library="rcl" deviceset="R-EU_" device="R1206W"/>
 <part name="R46" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND24" library="supply1" deviceset="GND" device=""/>
 <part name="VD23" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
