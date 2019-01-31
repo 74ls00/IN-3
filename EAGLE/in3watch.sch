@@ -10420,7 +10420,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="VD45" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT46" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R91" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R91" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="R92" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="VD46" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
