@@ -10490,6 +10490,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ1" library="jumper" deviceset="SJ" device=""/>
 <part name="R110" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R113" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
+<part name="J6" library="rcl" deviceset="R-EU_" device="R1206W"/>
 </parts>
 <sheets>
 <sheet>
@@ -11018,6 +11019,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="205.74" y="114.3" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND17" gate="1" x="203.2" y="88.9"/>
+<instance part="J6" gate="G$1" x="119.38" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="115.57" y="128.4986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="122.682" y="125.73" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11059,9 +11064,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="IC4" gate="A" pin="QH*"/>
 <wire x1="91.44" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="A" pin="SER"/>
-<wire x1="119.38" y1="22.86" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="22.86" x2="119.38" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11669,6 +11673,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="170.18" y1="71.12" x2="175.26" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC7" gate="A" pin="QA"/>
 <label x="170.18" y="71.12" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="IC5" gate="A" pin="SER"/>
+<wire x1="119.38" y1="147.32" x2="144.78" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="134.62" x2="119.38" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="J6" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>

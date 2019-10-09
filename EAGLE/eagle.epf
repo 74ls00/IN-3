@@ -7,6 +7,7 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="D:/Programs/EAGLE-6.4.0/lbr/rcl.lbr"
 UsedLibrary="lbr/in3.lbr"
 UsedLibrary="lbr/ds1307_pcf8583.lbr"
 UsedLibrary="lbr/DS3231_industrialberry.lbr"
@@ -17,24 +18,18 @@ UsedLibrary="lbr/zq.lbr"
 [Win_1]
 Type="CAM Processor"
 Loc="360 229 1131 731"
-State=2
+State=0
 Number=3
 File="in3watch.brd"
 Job="ExportGerber.cam"
 
 [Win_2]
-Type="Control Panel"
-Loc="332 293 931 692"
-State=2
-Number=0
-
-[Win_3]
 Type="Schematic Editor"
 Loc="332 293 931 692"
 State=1
 Number=1
 File="in3watch.sch"
-View="18.8079 -4.24409 209.466 156.832"
+View="18.3701 -22.4688 292.918 209.481"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -73,16 +68,16 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -5.64432 21.5858 235 187.385 2: -0.254719 10.6352 266.02 181.811 3: 65.8713 -8.47067 282.223 207.881 4: 18.8079 -4.24409 209.466 156.832 5: -8.95252 -64.9391 212.942 77.7075"
+Views=" 1: -4.22255 22.3739 236.421 188.173 2: 6.55861 14.51 272.833 185.686 3: 65.8713 -8.47067 282.223 207.881 4: 18.3701 -22.4688 292.918 209.481 5: -27.5487 34.007 238.725 205.183"
 Sheet=4
 
-[Win_4]
+[Win_3]
 Type="Board Editor"
 Loc="332 293 931 692"
 State=1
 Number=2
 File="in3watch.brd"
-View="-49.2072 -8.83918 -17.259 22.5838"
+View="-70.5083 -66.1962 66.863 68.9172"
 WireWidths=" 0 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.508 0.254 0.8128 0.6096 0.4064"
 PadDiameters=" 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0 2.3"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -121,6 +116,12 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=16
+
+[Win_4]
+Type="Control Panel"
+Loc="332 293 931 692"
+State=2
+Number=0
 
 [Desktop]
 Screen="1280 1024"
