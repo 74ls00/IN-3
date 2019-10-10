@@ -10491,6 +10491,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R110" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="R113" library="rcl" deviceset="R-EU_" device="R0805" value="10k"/>
 <part name="J6" library="rcl" deviceset="R-EU_" device="R1206W"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -11023,6 +11025,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="115.57" y="128.4986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="122.682" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="C9" gate="G$1" x="218.44" y="101.6"/>
+<instance part="C10" gate="G$1" x="226.06" y="101.6"/>
 </instances>
 <busses>
 </busses>
@@ -11139,6 +11143,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="203.2" y1="91.44" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
 <junction x="203.2" y="93.98"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="218.44" y1="96.52" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="93.98" x2="210.82" y2="93.98" width="0.1524" layer="91"/>
+<junction x="218.44" y="93.98"/>
+<junction x="210.82" y="93.98"/>
+<wire x1="218.44" y1="93.98" x2="226.06" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="226.06" y1="93.98" x2="226.06" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SER6" class="0">
@@ -11309,6 +11321,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="203.2" y1="109.22" x2="203.2" y2="106.68" width="0.1524" layer="91"/>
 <junction x="203.2" y="106.68"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="104.14" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="106.68" x2="210.82" y2="106.68" width="0.1524" layer="91"/>
+<junction x="210.82" y="106.68"/>
+<junction x="218.44" y="106.68"/>
+<wire x1="218.44" y1="106.68" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="226.06" y1="106.68" x2="226.06" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RA1" class="0">
