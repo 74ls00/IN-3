@@ -10381,7 +10381,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="VD37" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT38" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
 <part name="R75" library="rcl" deviceset="R-EU_" device="R1206W"/>
-<part name="R76" library="rcl" deviceset="R-EU_" device="0207/12"/>
+<part name="R76" library="rcl" deviceset="R-EU_" device="0207/10"/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="VD38" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT39" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
