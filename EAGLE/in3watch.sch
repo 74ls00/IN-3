@@ -10395,7 +10395,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND46" library="supply1" deviceset="GND" device=""/>
 <part name="VD40" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT41" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
-<part name="R81" library="rcl" deviceset="R-EU_" device="R1206W"/>
+<part name="R81" library="rcl" deviceset="R-EU_" device="R0805"/>
 <part name="R82" library="rcl" deviceset="R-EU_" device="0207/12"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="VD41" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
@@ -11768,7 +11768,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="N23" gate="G$1" x="96.52" y="88.9"/>
 <instance part="N24" gate="G$1" x="96.52" y="119.38"/>
 <instance part="N25" gate="G$1" x="96.52" y="139.7"/>
-<instance part="N26" gate="G$1" x="104.14" y="109.22"/>
+<instance part="N26" gate="G$1" x="104.14" y="109.22" smashed="yes">
+<attribute name="NAME" x="104.14" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.855" y="114.935" size="1.778" layer="96"/>
+</instance>
 <instance part="N27" gate="G$1" x="147.32" y="129.54" rot="R90"/>
 <instance part="N28" gate="G$1" x="147.32" y="78.74" rot="R90"/>
 <instance part="N29" gate="G$1" x="172.72" y="170.18"/>
@@ -12391,6 +12394,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="68.58" y="180.34" size="1.778" layer="95"/>
 <junction x="76.2" y="180.34"/>
 <pinref part="R78" gate="G$1" pin="2"/>
+<junction x="147.32" y="139.7"/>
 </segment>
 </net>
 <net name="E1" class="0">
