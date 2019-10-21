@@ -167,8 +167,8 @@
 <dimension x1="-118.745" y1="47.9425" x2="-118.745" y2="-48.26" x3="-121.6025" y3="-0.15875" textsize="1.778" layer="20" dtype="vertical"/>
 <wire x1="116.84" y1="47.9425" x2="116.84" y2="-48.26" width="0.254" layer="20"/>
 <dimension x1="-116.84" y1="49.53" x2="116.84" y2="51.1175" x3="0" y3="53.34" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="-116.84" y1="57.15" x2="0" y2="-60.96" x3="-58.42" y3="66.9925" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="0" y1="70.8025" x2="116.84" y2="57.15" x3="58.42" y3="76.5175" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="-31.115" y1="-57.15" x2="-17.145" y2="-67.6275" x3="-24.13" y3="66.9925" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="70.8025" x2="17.145" y2="-57.785" x3="8.5725" y3="76.5175" textsize="1.778" layer="47" dtype="horizontal"/>
 <circle x="-94.615" y="29.5275" radius="1.851325" width="0.4064" layer="209"/>
 </plain>
 <libraries>
@@ -1704,6 +1704,26 @@ Based on the following sources:
 <wire x1="1.6" y1="-14" x2="1.6" y2="-16" width="0.127" layer="21"/>
 <circle x="0" y="0" radius="2" width="0.127" layer="51"/>
 </package>
+<package name="IN-3-3">
+<pad name="A" x="-1.5875" y="-16" drill="0.6" shape="octagon"/>
+<pad name="K" x="3.5875" y="-16" drill="0.6" shape="octagon"/>
+<text x="-2.4925" y="5.2375" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.5" y1="8" x2="-3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-9" x2="-3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="3.5" y1="8" x2="3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-9" x2="3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-14" x2="-1.6" y2="-14" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-14" x2="1.6" y2="-14" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-14" x2="3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-9" x2="3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="0" y1="11" x2="-3.5" y2="8" width="0.127" layer="21"/>
+<wire x1="0" y1="11" x2="3.5" y2="8" width="0.127" layer="21"/>
+<rectangle x1="-2" y1="-2" x2="2" y2="2" layer="21"/>
+<text x="-2.4925" y="3.2375" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="-14" x2="-1.6" y2="-16" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-14" x2="1.6" y2="-16" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
+</package>
 <package name="IN-3-1">
 <pad name="A" x="-4.5875" y="-18" drill="0.6" shape="octagon"/>
 <pad name="K" x="-1.4125" y="-18" drill="0.6" shape="octagon"/>
@@ -2222,7 +2242,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="N24" library="in3-mod" package="IN-3-1" value="IN-31" x="-45" y="0" locked="yes" rot="R225"/>
 <element name="N25" library="in3-mod" package="IN-3-1" value="IN-31" x="-45" y="14" locked="yes" rot="R225"/>
 <element name="N26" library="in3" package="IN-3" value="IN-3" x="-31" y="0" locked="yes" rot="R180"/>
-<element name="N27" library="in3" package="IN-3" value="IN-3" x="0" y="14" locked="yes"/>
+<element name="N27" library="in3-mod" package="IN-3-3" value="IN-33" x="0" y="14" locked="yes"/>
 <element name="N28" library="in3" package="IN-3" value="IN-3" x="0" y="-14" locked="yes"/>
 <element name="N29" library="in3" package="IN-3" value="IN-3" x="17" y="28" locked="yes" rot="R135"/>
 <element name="N30" library="in3" package="IN-3" value="IN-3" x="31" y="28" locked="yes" rot="R135"/>
@@ -2893,9 +2913,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="29.845" y1="6.985" x2="29.845" y2="9.2075" width="0.4064" layer="16"/>
 <wire x1="29.845" y1="9.2075" x2="27.6225" y2="11.43" width="0.4064" layer="16"/>
 <wire x1="27.6225" y1="11.43" x2="25.75535" y2="11.43" width="0.4064" layer="16"/>
-<wire x1="16.98625" y1="-17.2575" x2="16.98625" y2="-11.1125" width="0.6096" layer="16"/>
-<wire x1="16.98625" y1="-11.1125" x2="18.57375" y2="-9.525" width="0.6096" layer="16"/>
-<wire x1="18.57375" y1="-9.525" x2="18.57375" y2="-7.475" width="0.6096" layer="16"/>
+<wire x1="16.98625" y1="-17.2575" x2="16.98625" y2="-16.1925" width="0.6096" layer="16"/>
+<wire x1="16.98625" y1="-16.1925" x2="18.57375" y2="-14.605" width="0.6096" layer="16"/>
+<wire x1="18.57375" y1="-14.605" x2="18.57375" y2="-7.475" width="0.6096" layer="16"/>
 <wire x1="18.57375" y1="-7.475" x2="17.7775" y2="-6.36125" width="0.6096" layer="16"/>
 <wire x1="17.73375" y1="-4.28625" x2="17.7775" y2="-6.36125" width="0.6096" layer="16"/>
 <wire x1="18.095" y1="10.14875" x2="19.03875" y2="10.14875" width="0.6096" layer="16"/>
@@ -5141,7 +5161,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="E1">
 <contactref element="N27" pad="K"/>
 <contactref element="R112" pad="2"/>
-<wire x1="1.585" y1="-4.1275" x2="1.5875" y2="-2" width="0.6096" layer="16"/>
+<wire x1="1.585" y1="-4.1275" x2="3.5875" y2="-2" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="E2">
 <contactref element="N28" pad="K"/>

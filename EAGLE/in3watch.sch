@@ -7564,6 +7564,26 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </library>
 <library name="in3-mod">
 <packages>
+<package name="IN-3-3">
+<pad name="A" x="-1.5875" y="-16" drill="0.6" shape="octagon"/>
+<pad name="K" x="3.5875" y="-16" drill="0.6" shape="octagon"/>
+<text x="-2.4925" y="5.2375" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="-3.5" y1="8" x2="-3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-9" x2="-3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="3.5" y1="8" x2="3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-9" x2="3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-14" x2="-1.6" y2="-14" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-14" x2="1.6" y2="-14" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-14" x2="3.5" y2="-14" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-9" x2="3.5" y2="-9" width="0.127" layer="21"/>
+<wire x1="0" y1="11" x2="-3.5" y2="8" width="0.127" layer="21"/>
+<wire x1="0" y1="11" x2="3.5" y2="8" width="0.127" layer="21"/>
+<rectangle x1="-2" y1="-2" x2="2" y2="2" layer="21"/>
+<text x="-2.4925" y="3.2375" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-1.6" y1="-14" x2="-1.6" y2="-16" width="0.127" layer="21"/>
+<wire x1="1.6" y1="-14" x2="1.6" y2="-16" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="51"/>
+</package>
 <package name="IN-3-1">
 <pad name="A" x="-4.5875" y="-18" drill="0.6" shape="octagon"/>
 <pad name="K" x="-1.4125" y="-18" drill="0.6" shape="octagon"/>
@@ -7671,6 +7691,15 @@ diameter 3 mm, horizontal, grid 12.7 mm</description>
 </technologies>
 </device>
 <device name="11" package="IN-3-11">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="K" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="IN-3-3">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="K" pad="K"/>
@@ -10191,7 +10220,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="N24" library="in3-mod" deviceset="IN-3" device="1"/>
 <part name="N25" library="in3-mod" deviceset="IN-3" device="1"/>
 <part name="N26" library="in3" deviceset="IN-3" device=""/>
-<part name="N27" library="in3" deviceset="IN-3" device=""/>
+<part name="N27" library="in3-mod" deviceset="IN-3" device="3"/>
 <part name="N28" library="in3" deviceset="IN-3" device=""/>
 <part name="N29" library="in3" deviceset="IN-3" device=""/>
 <part name="N30" library="in3" deviceset="IN-3" device=""/>
