@@ -10389,7 +10389,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="VD23" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT24" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
 <part name="R47" library="rcl" deviceset="R-EU_" device="R0805"/>
-<part name="R48" library="rcl" deviceset="R-EU_" device="0207/12"/>
+<part name="R48" library="rcl" deviceset="R-EU_" device="0207/10"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="VD24" library="diode" deviceset="ZENER-DIODE" device="SOD80C"/>
 <part name="VT25" library="transistor-npn" deviceset="BC849*" device="SMD" value=""/>
