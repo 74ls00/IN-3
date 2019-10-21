@@ -168,7 +168,7 @@
 <wire x1="116.84" y1="47.9425" x2="116.84" y2="-48.26" width="0.254" layer="20"/>
 <dimension x1="-116.84" y1="49.53" x2="116.84" y2="51.1175" x3="0" y3="53.34" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="-31.115" y1="-57.15" x2="-17.145" y2="-67.6275" x3="-24.13" y3="66.9925" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="0" y1="70.8025" x2="17.145" y2="-57.785" x3="8.5725" y3="76.5175" textsize="1.778" layer="47" dtype="horizontal"/>
+<dimension x1="0" y1="70.8025" x2="100.965" y2="-52.3875" x3="50.4825" y3="76.5175" textsize="1.778" layer="47" dtype="horizontal"/>
 <circle x="-94.615" y="29.5275" radius="1.851325" width="0.4064" layer="209"/>
 </plain>
 <libraries>
@@ -2273,239 +2273,754 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <element name="N52" library="in3-mod" package="IN-3-11" value="IN-311" x="73" y="0" locked="yes" rot="R225"/>
 <element name="N53" library="in3-mod" package="IN-3-11" value="IN-311" x="73" y="14" rot="R225"/>
 <element name="N54" library="in3" package="IN-3" value="IN-3" x="87" y="0" locked="yes"/>
-<element name="DD2" library="atmel" package="TQFP32-08" value="ATMEGA328P" x="40.695" y="-18.81875" rot="MR180">
+<element name="DD2" library="atmel" package="TQFP32-08" value="ATMEGA328P" x="40.695" y="-18.81875" smashed="yes" rot="MR180">
 <attribute name="OC_NEWARK" value="73M8863" x="40.695" y="-18.81875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MPN" value="ATMEGA8-16AU" x="40.695" y="-18.81875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="MF" value="" x="40.695" y="-18.81875" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="OC_FARNELL" value="9171371" x="40.695" y="-18.81875" size="1.778" layer="28" rot="MR180" display="off"/>
+<attribute name="NAME" x="40.1489" y="-24.21625" size="1.016" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="37.6724" y="-17.54875" size="0.8128" layer="28" rot="MR180"/>
 </element>
-<element name="VT1" library="transistor-npn" package="SOT23-BEC" value="" x="72.4075" y="34.675" rot="MR135"/>
+<element name="VT1" library="transistor-npn" package="SOT23-BEC" value="" x="72.4075" y="34.675" smashed="yes" rot="MR135">
+<attribute name="NAME" x="70.889078125" y="31.45" size="1.27" layer="26" rot="MR45"/>
+<attribute name="VALUE" x="68.8154" y="35.573025" size="1.27" layer="28" rot="MR135"/>
+</element>
 <element name="R1" library="rcl" package="R0805" value="" x="81.2825" y="32.58" rot="MR0"/>
-<element name="R2" library="rcl" package="0207/12" value="" x="70.8325" y="37.205" rot="MR45"/>
+<element name="R2" library="rcl" package="0207/12" value="" x="71.0625" y="36.86" smashed="yes" rot="R135">
+<attribute name="NAME" x="72.3197375" y="36.48460625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="73.16388125" y="35.7284875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
 <element name="DD1B" library="ds1307_pcf8583" package="DIL08" value="DS1307" x="60.885" y="-19.74375" rot="R265"/>
 <element name="IC1" library="74xx-eu" package="SO16" value="74HC595D" x="93.89375" y="24.20375" rot="MR315"/>
 <element name="IC2" library="74xx-eu" package="SO16" value="74HC595D" x="84.75625" y="15.08125" rot="MR75"/>
 <element name="IC3" library="74xx-eu" package="SO16" value="74HC595D" x="28.82875" y="6.985" rot="MR90"/>
 <element name="IC4" library="74xx-eu" package="SO16" value="74HC595D" x="-31.41125" y="25.9375" rot="MR275"/>
 <element name="IC5" library="74xx-eu" package="SO16" value="74HC595D" x="-27.98875" y="7.50625" rot="MR0"/>
-<element name="IC6" library="74xx-eu" package="SO16" value="74HC595D" x="-84.51125" y="14.0325" rot="MR0"/>
+<element name="IC6" library="74xx-eu" package="SO16" value="74HC595D" x="-84.51125" y="14.0325" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="-80.70125" y="13.2705" size="1.27" layer="28" ratio="10" rot="MR0"/>
+<attribute name="NAME" x="-79.05025" y="10.8575" size="1.27" layer="26" ratio="10" rot="MR90"/>
+</element>
 <element name="IC7" library="74xx-eu" package="SO16" value="74HC595D" x="-100.3" y="20.01125" rot="MR90"/>
-<element name="VD1" library="diode" package="SOD80C" value="" x="69.7275" y="37.23625" rot="MR135"/>
-<element name="VT2" library="transistor-npn" package="SOT23-BEC" value="" x="86.53375" y="35.01125" rot="MR135"/>
+<element name="VD1" library="diode" package="SOD80C" value="" x="69.7275" y="37.23625" smashed="yes" rot="MR135">
+<attribute name="NAME" x="69.60690625" y="39.57960625" size="1.27" layer="26" rot="MR315"/>
+<attribute name="VALUE" x="66.943621875" y="37.864865625" size="1.27" layer="28" rot="MR135"/>
+</element>
+<element name="VT2" library="transistor-npn" package="SOT23-BEC" value="" x="86.53375" y="35.01125" smashed="yes" rot="MR135">
+<attribute name="NAME" x="85.792828125" y="31.28875" size="1.27" layer="26" rot="MR45"/>
+<attribute name="VALUE" x="82.94165" y="35.909275" size="1.27" layer="28" rot="MR135"/>
+</element>
 <element name="R3" library="rcl" package="R0805" value="" x="98.6575" y="32.00375" rot="MR45"/>
-<element name="R4" library="rcl" package="0207/12" value="" x="84.76" y="37.71" rot="R135"/>
-<element name="VD2" library="diode" package="SOD80C" value="" x="84.025" y="37.07375" rot="MR135"/>
-<element name="VT3" library="transistor-npn" package="SOT23-BEC" value="" x="104.315" y="28.57" rot="MR0"/>
+<element name="R4" library="rcl" package="0207/12" value="" x="84.76" y="37.71" smashed="yes" rot="R135">
+<attribute name="NAME" x="86.017234375" y="37.33460625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="86.861378125" y="36.5784875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD2" library="diode" package="SOD80C" value="" x="84.025" y="37.07375" smashed="yes" rot="MR135">
+<attribute name="NAME" x="84.20190625" y="39.42460625" size="1.27" layer="26" rot="MR315"/>
+<attribute name="VALUE" x="81.241121875" y="37.702365625" size="1.27" layer="28" rot="MR135"/>
+</element>
+<element name="VT3" library="transistor-npn" package="SOT23-BEC" value="" x="104.315" y="28.57" smashed="yes" rot="MR0">
+<attribute name="NAME" x="106.1875" y="29.215" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="106.22" y="25.395" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="R5" library="rcl" package="R0805" value="" x="102.52" y="22.3075" rot="MR180"/>
-<element name="R6" library="rcl" package="0207/12" value="" x="99.7475" y="36.1925" rot="R135"/>
-<element name="VD3" library="diode" package="SOD80C" value="" x="104.205" y="25.3175" rot="MR0"/>
-<element name="VT4" library="transistor-npn" package="SOT23-BEC" value="" x="105.03" y="14.6" rot="MR0"/>
+<element name="R6" library="rcl" package="0207/12" value="" x="99.7475" y="36.1925" smashed="yes" rot="R135">
+<attribute name="NAME" x="101.004734375" y="35.81710625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="101.848878125" y="35.0609875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD3" library="diode" package="SOD80C" value="" x="104.205" y="25.3175" smashed="yes" rot="MR0">
+<attribute name="NAME" x="105.091" y="23.7045" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="105.729" y="22.9045" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT4" library="transistor-npn" package="SOT23-BEC" value="" x="105.03" y="14.6" smashed="yes" rot="MR0">
+<attribute name="NAME" x="101.5375" y="14.2825" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="106.935" y="11.425" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="R7" library="rcl" package="R0805" value="" x="104.345" y="8.655" rot="MR180"/>
-<element name="R8" library="rcl" package="0207/12" value="" x="108.755" y="13.195" rot="R315"/>
-<element name="VD4" library="diode" package="SOD80C" value="" x="104.95" y="11.1575" rot="MR0"/>
+<element name="R8" library="rcl" package="0207/12" value="" x="108.755" y="13.195" smashed="yes" rot="R315">
+<attribute name="NAME" x="107.4977625" y="13.570390625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="106.65361875" y="14.326509375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD4" library="diode" package="SOD80C" value="" x="104.95" y="11.1575" smashed="yes" rot="MR0">
+<attribute name="NAME" x="100.759" y="10.713" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="106.474" y="8.7445" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="VT5" library="transistor-npn" package="SOT23-BEC" value="" x="105.36" y="-2.08" rot="MR90"/>
 <element name="R9" library="rcl" package="R0805" value="" x="98.8375" y="2.605" rot="MR270"/>
-<element name="R10" library="rcl" package="0207/12" value="" x="108.7775" y="-0.6375" rot="R315"/>
+<element name="R10" library="rcl" package="0207/12" value="" x="108.7775" y="-0.6375" smashed="yes" rot="R315">
+<attribute name="NAME" x="106.8852625" y="0.372890625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="106.67611875" y="0.494009375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
 <element name="VD5" library="diode" package="SOD80C" value="" x="101.155" y="-2.24" rot="MR90"/>
-<element name="VT6" library="transistor-npn" package="SOT23-BEC" value="" x="101.2525" y="-11.27" rot="MR90"/>
+<element name="VT6" library="transistor-npn" package="SOT23-BEC" value="" x="101.2525" y="-11.27" smashed="yes" rot="MR90">
+<attribute name="NAME" x="101.4425" y="-7.9075" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="98.0775" y="-13.175" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="R11" library="rcl" package="R0805" value="" x="96.5675" y="-3.6825" rot="MR270"/>
-<element name="R12" library="rcl" package="0207/12" value="" x="108.745" y="-14.7025" rot="R315"/>
-<element name="VD6" library="diode" package="SOD80C" value="" x="98.0275" y="-10.08" rot="MR90"/>
-<element name="VT7" library="transistor-npn" package="SOT23-BEC" value="" x="104.155" y="-21.21" rot="MR180"/>
+<element name="R12" library="rcl" package="0207/12" value="" x="108.745" y="-14.7025" smashed="yes" rot="R315">
+<attribute name="NAME" x="107.1702625" y="-14.00960625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="106.64361875" y="-13.5709875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD6" library="diode" package="SOD80C" value="" x="98.0275" y="-10.08" smashed="yes" rot="MR90">
+<attribute name="NAME" x="100.1865" y="-7.192" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="95.6145" y="-11.604" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT7" library="transistor-npn" package="SOT23-BEC" value="" x="104.155" y="-21.21" smashed="yes" rot="MR180">
+<attribute name="NAME" x="99.71" y="-22.1625" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="102.25" y="-18.035" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R13" library="rcl" package="R0805" value="" x="97.44" y="-15.1" rot="MR180"/>
-<element name="R14" library="rcl" package="0207/12" value="" x="108.695" y="-28.99" rot="R315"/>
-<element name="VD7" library="diode" package="SOD80C" value="" x="104.0425" y="-17.9575" rot="MR180"/>
-<element name="VT8" library="transistor-npn" package="SOT23-BEC" value="" x="95.185" y="-25.655" rot="MR180"/>
+<element name="R14" library="rcl" package="0207/12" value="" x="108.695" y="-28.99" smashed="yes" rot="R315">
+<attribute name="NAME" x="107.1202625" y="-28.29710625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="106.59361875" y="-27.8584875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD7" library="diode" package="SOD80C" value="" x="104.0425" y="-17.9575" smashed="yes" rot="MR180">
+<attribute name="NAME" x="102.5185" y="-15.2905" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="102.5185" y="-15.5445" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT8" library="transistor-npn" package="SOT23-BEC" value="" x="95.185" y="-25.655" smashed="yes" rot="MR180">
+<attribute name="NAME" x="97.09" y="-25.02" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="93.28" y="-22.48" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R15" library="rcl" package="R0805" value="" x="94.215" y="-18.5725" rot="MR270"/>
-<element name="R16" library="rcl" package="0207/12" value="" x="99.455" y="-33.515" rot="R315"/>
-<element name="VD8" library="diode" package="SOD80C" value="" x="95.9" y="-22.2125" rot="MR180"/>
+<element name="R16" library="rcl" package="0207/12" value="" x="99.455" y="-33.515" smashed="yes" rot="R315">
+<attribute name="NAME" x="97.8802625" y="-32.82210625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="97.35361875" y="-32.3834875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD8" library="diode" package="SOD80C" value="" x="95.9" y="-22.2125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="95.646" y="-19.863" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="94.376" y="-19.7995" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="VT9" library="transistor-npn" package="SOT23-BEC" value="" x="80.74" y="-25.7175" rot="MR180"/>
 <element name="R17" library="rcl" package="R0805" value="" x="77.2475" y="-19.05" rot="MR270"/>
-<element name="R18" library="rcl" package="0207/12" value="" x="85.185" y="-33.3375" rot="R315"/>
+<element name="R18" library="rcl" package="0207/12" value="" x="85.185" y="-33.3375" smashed="yes" rot="R315">
+<attribute name="NAME" x="83.6102625" y="-32.64460625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="83.08361875" y="-32.2059875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
 <element name="VD9" library="diode" package="SOD80C" value="" x="80.74" y="-22.5425" rot="MR180"/>
-<element name="VT10" library="transistor-npn" package="SOT23-BEC" value="" x="73.12" y="-5.3975" rot="MR90"/>
-<element name="R19" library="rcl" package="R1206W" value="" x="76.67625" y="-1.9116" rot="MR270"/>
-<element name="R20" library="rcl" package="0207/12" value="" x="70.2625" y="-4.1275" rot="R135"/>
-<element name="VD10" library="diode" package="SOD80C" value="" x="69.31" y="-5.08" rot="MR90"/>
-<element name="VT11" library="transistor-npn" package="SOT23-BEC" value="" x="77.2475" y="5.715" rot="MR270"/>
-<element name="R21" library="rcl" package="R0805" value="" x="78.5175" y="9.2075" rot="MR270"/>
-<element name="R22" library="rcl" package="0207/12" value="" x="69.6275" y="10.16" rot="R135"/>
-<element name="VD11" library="diode" package="SOD80C" value="" x="80.4225" y="5.3975" rot="MR270"/>
-<element name="VT12" library="transistor-npn" package="SOT23-BEC" value="" x="71.4375" y="18.51" rot="MR0"/>
-<element name="R23" library="rcl" package="R0805" value="" x="76.295" y="12.3825" rot="MR0"/>
-<element name="R24" library="rcl" package="0207/12" value="" x="68.675" y="25.0825" rot="R135"/>
-<element name="VD12" library="diode" package="SOD80C" value="" x="72.0725" y="14.7" rot="MR0"/>
-<element name="VT13" library="transistor-npn" package="SOT23-BEC" value="" x="84.8675" y="-1.5875" rot="MR180"/>
+<element name="VT10" library="transistor-npn" package="SOT23-BEC" value="" x="73.12" y="-5.3975" smashed="yes" rot="MR90">
+<attribute name="NAME" x="73.025" y="-2.1275" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="69.945" y="-7.3025" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R19" library="rcl" package="R1206W" value="" x="76.67625" y="-1.9116" smashed="yes" rot="MR270">
+<attribute name="NAME" x="75.40625" y="-0.3241" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="79.21625" y="-0.0066" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R20" library="rcl" package="0207/12" value="" x="70.2625" y="-4.1275" smashed="yes" rot="R135">
+<attribute name="NAME" x="71.837234375" y="-4.820390625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="72.363878125" y="-5.259009375" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD10" library="diode" package="SOD80C" value="" x="69.31" y="-5.08" smashed="yes" rot="MR90">
+<attribute name="NAME" x="66.643" y="-7.239" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="66.897" y="-6.604" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT11" library="transistor-npn" package="SOT23-BEC" value="" x="77.2475" y="5.715" smashed="yes" rot="MR270">
+<attribute name="NAME" x="76.5175" y="7.525" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="80.4225" y="7.62" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R21" library="rcl" package="R0805" value="" x="78.5175" y="9.2075" smashed="yes" rot="MR270">
+<attribute name="NAME" x="77.47" y="9.43" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="81.0575" y="9.8425" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R22" library="rcl" package="0207/12" value="" x="69.6275" y="10.16" smashed="yes" rot="R135">
+<attribute name="NAME" x="71.202234375" y="9.46710625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="71.728878125" y="9.0284875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD11" library="diode" package="SOD80C" value="" x="80.4225" y="5.3975" smashed="yes" rot="MR270">
+<attribute name="NAME" x="80.899" y="1.3655" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="82.8355" y="6.9215" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT12" library="transistor-npn" package="SOT23-BEC" value="" x="71.4375" y="18.51" smashed="yes" rot="MR0">
+<attribute name="NAME" x="70.485" y="19.78" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="73.3425" y="15.335" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R23" library="rcl" package="R0805" value="" x="76.295" y="12.3825" smashed="yes" rot="MR0">
+<attribute name="NAME" x="78.5175" y="13.6525" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="76.93" y="9.8425" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R24" library="rcl" package="0207/12" value="" x="68.675" y="25.0825" smashed="yes" rot="R135">
+<attribute name="NAME" x="70.249734375" y="24.38960625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="70.776378125" y="23.9509875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD12" library="diode" package="SOD80C" value="" x="72.0725" y="14.7" smashed="yes" rot="MR0">
+<attribute name="NAME" x="73.5965" y="12.033" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="73.5965" y="12.287" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT13" library="transistor-npn" package="SOT23-BEC" value="" x="84.8675" y="-1.5875" smashed="yes" rot="MR180">
+<attribute name="NAME" x="83.5975" y="-3.81" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="82.9625" y="1.5875" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R25" library="rcl" package="R0805" value="" x="85.185" y="6.0325" rot="MR270"/>
-<element name="R26" library="rcl" package="0207/12" value="" x="82.3275" y="-9.525" rot="R270"/>
-<element name="VD13" library="diode" package="SOD80C" value="" x="86.7725" y="2.54" rot="MR180"/>
-<element name="VT14" library="transistor-npn" package="SOT23-BEC" value="" x="16.87125" y="36.8075" rot="MR180"/>
-<element name="R27" library="rcl" package="R0805" value="" x="19.86625" y="30.20625" rot="MR90"/>
-<element name="R28" library="rcl" package="0207/12" value="" x="20.155" y="38.22" rot="R45"/>
-<element name="VD14" library="diode" package="SOD80C" value="" x="21.63375" y="33.15625" rot="MR180"/>
-<element name="VT15" library="transistor-npn" package="SOT23-BEC" value="" x="29.42" y="31.15625" rot="MR270"/>
-<element name="R29" library="rcl" package="R0805" value="" x="36.0775" y="32.0175" rot="MR0"/>
-<element name="R30" library="rcl" package="0207/12" value="" x="30.4425" y="34.4775" rot="R45"/>
-<element name="VD15" library="diode" package="SOD80C" value="" x="33.07" y="31.3475" rot="MR270"/>
-<element name="VT16" library="transistor-npn" package="SOT23-BEC" value="" x="46.325" y="35.4425" rot="MR270"/>
-<element name="R31" library="rcl" package="R0805" value="" x="52.905" y="36.7025" rot="MR0"/>
-<element name="R32" library="rcl" package="0207/12" value="" x="48.2225" y="38.21" rot="R45"/>
-<element name="VD16" library="diode" package="SOD80C" value="" x="49.6575" y="35.7925" rot="MR270"/>
-<element name="C1" library="rcl" package="C0805" value="" x="88.5825" y="26.4475" rot="MR135"/>
+<element name="R26" library="rcl" package="0207/12" value="" x="82.3275" y="-9.525" smashed="yes" rot="R270">
+<attribute name="NAME" x="81.8195" y="-8.255" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="81.6417" y="-7.239" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="VD13" library="diode" package="SOD80C" value="" x="86.7725" y="2.54" smashed="yes" rot="MR180">
+<attribute name="NAME" x="87.1535" y="1.0795" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="85.2485" y="4.953" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT14" library="transistor-npn" package="SOT23-BEC" value="" x="16.87125" y="36.8075" smashed="yes" rot="MR180">
+<attribute name="NAME" x="14.64875" y="40.3" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="14.96625" y="39.9825" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R27" library="rcl" package="R0805" value="" x="19.86625" y="30.20625" smashed="yes" rot="MR90">
+<attribute name="NAME" x="21.13625" y="28.30125" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="17.32625" y="29.57125" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R28" library="rcl" package="0207/12" value="" x="20.155" y="38.22" smashed="yes" rot="R45">
+<attribute name="NAME" x="19.46210625" y="36.6452625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="19.0234875" y="36.11861875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD14" library="diode" package="SOD80C" value="" x="21.63375" y="33.15625" smashed="yes" rot="MR180">
+<attribute name="NAME" x="19.47475" y="35.82325" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="20.10975" y="35.56925" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT15" library="transistor-npn" package="SOT23-BEC" value="" x="29.42" y="31.15625" smashed="yes" rot="MR270">
+<attribute name="NAME" x="29.88625" y="33.445" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="32.595" y="33.06125" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R29" library="rcl" package="R0805" value="" x="36.0775" y="32.0175" smashed="yes" rot="MR0">
+<attribute name="NAME" x="37.9825" y="33.2875" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="36.7125" y="29.4775" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R30" library="rcl" package="0207/12" value="" x="30.4425" y="34.4775" smashed="yes" rot="R45">
+<attribute name="NAME" x="29.74960625" y="32.9027625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="29.3109875" y="32.37611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD15" library="diode" package="SOD80C" value="" x="33.07" y="31.3475" smashed="yes" rot="MR270">
+<attribute name="NAME" x="34.4385" y="30.3395" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="35.483" y="32.8715" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT16" library="transistor-npn" package="SOT23-BEC" value="" x="46.325" y="35.4425" smashed="yes" rot="MR270">
+<attribute name="NAME" x="44.885" y="39.975" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="49.5" y="37.3475" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R31" library="rcl" package="R0805" value="" x="52.905" y="36.7025" smashed="yes" rot="MR0">
+<attribute name="NAME" x="54.81" y="37.9725" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="53.54" y="34.1625" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R32" library="rcl" package="0207/12" value="" x="48.2225" y="38.21" smashed="yes" rot="R45">
+<attribute name="NAME" x="47.52960625" y="36.6352625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="47.0909875" y="36.10861875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD16" library="diode" package="SOD80C" value="" x="49.6575" y="35.7925" smashed="yes" rot="MR270">
+<attribute name="NAME" x="51.5835" y="34.862" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="52.0705" y="37.3165" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C1" library="rcl" package="C0805" value="" x="88.5825" y="26.4475" smashed="yes" rot="MR135">
+<attribute name="NAME" x="86.0425" y="27.191446875" size="1.27" layer="26" rot="MR135"/>
+<attribute name="VALUE" x="85.888425" y="27.345525" size="1.27" layer="28" rot="MR135"/>
+</element>
 <element name="C2" library="rcl" package="C0805" value="" x="93.98" y="14.54125" rot="MR90"/>
-<element name="VT17" library="transistor-npn" package="SOT23-BEC" value="" x="45.4025" y="22.5425" rot="MR270"/>
-<element name="R33" library="rcl" package="R0805" value="" x="42.06875" y="24.4475" rot="MR90"/>
-<element name="R34" library="rcl" package="0207/12" value="" x="48.26" y="24.4475" rot="R45"/>
-<element name="VD17" library="diode" package="SOD80C" value="" x="49.05375" y="22.5425" rot="MR270"/>
-<element name="VT18" library="transistor-npn" package="SOT23-BEC" value="" x="44.7675" y="9.2075" rot="MR180"/>
-<element name="R35" library="rcl" package="M1206" value="" x="40.11625" y="0.3175" rot="MR90"/>
-<element name="R36" library="rcl" package="0207/12" value="" x="48.26" y="10.4775" rot="R45"/>
-<element name="VD18" library="diode" package="SOD80C" value="" x="45.24375" y="12.43" rot="MR180"/>
-<element name="VT19" library="transistor-npn" package="SOT23-BEC" value="" x="44.45" y="-4.445" rot="MR180"/>
+<element name="VT17" library="transistor-npn" package="SOT23-BEC" value="" x="45.4025" y="22.5425" smashed="yes" rot="MR270">
+<attribute name="NAME" x="46.0375" y="24.4475" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="48.5775" y="24.4475" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R33" library="rcl" package="R0805" value="" x="40.48125" y="20.955" smashed="yes" rot="MR90">
+<attribute name="NAME" x="37.94125" y="19.685" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="37.94125" y="20.32" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R34" library="rcl" package="0207/12" value="" x="48.26" y="24.4475" smashed="yes" rot="R45">
+<attribute name="NAME" x="47.56710625" y="22.8727625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="47.1284875" y="22.34611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD17" library="diode" package="SOD80C" value="" x="49.05375" y="22.5425" smashed="yes" rot="MR270">
+<attribute name="NAME" x="45.7835" y="19.65325" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="51.46675" y="24.0665" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT18" library="transistor-npn" package="SOT23-BEC" value="" x="44.7675" y="9.2075" smashed="yes" rot="MR180">
+<attribute name="NAME" x="42.545" y="8.5725" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="42.8625" y="12.3825" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R35" library="rcl" package="M1206" value="" x="40.11625" y="0.3175" smashed="yes" rot="MR90">
+<attribute name="NAME" x="41.70375" y="0.635" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="37.57625" y="-0.9525" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R36" library="rcl" package="0207/12" value="" x="48.26" y="10.4775" smashed="yes" rot="R45">
+<attribute name="NAME" x="47.56710625" y="8.9027625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="47.1284875" y="8.37611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD18" library="diode" package="SOD80C" value="" x="45.24375" y="12.43" smashed="yes" rot="MR180">
+<attribute name="NAME" x="43.08475" y="15.097" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="43.71975" y="14.843" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT19" library="transistor-npn" package="SOT23-BEC" value="" x="44.45" y="-4.445" smashed="yes" rot="MR180">
+<attribute name="NAME" x="46.99" y="-3.4925" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="42.545" y="-1.27" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R37" library="rcl" package="R0805" value="" x="32.54375" y="-1.11125" rot="MR180"/>
-<element name="R38" library="rcl" package="0207/12" value="" x="48.895" y="-3.175" rot="R45"/>
-<element name="VD19" library="diode" package="SOD80C" value="" x="44.45" y="-1.27" rot="MR180"/>
-<element name="VT20" library="transistor-npn" package="SOT23-BEC" value="" x="29.845" y="-29.21" rot="MR90"/>
-<element name="R39" library="rcl" package="R0805" value="" x="22.86" y="4.60375" rot="MR270"/>
-<element name="R40" library="rcl" package="0207/12" value="" x="31.4325" y="-34.6075" rot="R225"/>
-<element name="VD20" library="diode" package="SOD80C" value="" x="26.19375" y="-28.73375" rot="MR90"/>
-<element name="VT21" library="transistor-npn" package="SOT23-BEC" value="" x="20.47875" y="-27.6225" rot="MR90"/>
-<element name="R41" library="rcl" package="R1206W" value="" x="20.32" y="3.4925" rot="MR270"/>
-<element name="R42" library="rcl" package="0207/12" value="" x="18.0975" y="-33.9725" rot="R225"/>
-<element name="VD21" library="diode" package="SOD80C" value="" x="17.30375" y="-27.46375" rot="MR90"/>
-<element name="VT22" library="transistor-npn" package="SOT23-BEC" value="" x="14.2875" y="-20.47875" rot="MR180"/>
-<element name="R43" library="rcl" package="R1206W" value="" x="24.13" y="-1.74625" rot="MR45"/>
-<element name="R44" library="rcl" package="0207/12" value="" x="9.8425" y="-27.94" rot="R225"/>
-<element name="VD22" library="diode" package="SOD80C" value="" x="15.24" y="-17.30375" rot="MR180"/>
-<element name="VT23" library="transistor-npn" package="SOT23-BEC" value="" x="16.51" y="-11.58875" rot="MR0"/>
-<element name="R45" library="rcl" package="R1206W" value="" x="22.70125" y="-5.715" rot="MR315"/>
-<element name="R46" library="rcl" package="0207/12" value="" x="9.525" y="-14.76375" rot="R225"/>
-<element name="VD23" library="diode" package="SOD80C" value="" x="17.30375" y="-14.76375" rot="MR0"/>
-<element name="VT24" library="transistor-npn" package="SOT23-BEC" value="" x="17.145" y="9.04875" rot="MR180"/>
-<element name="R47" library="rcl" package="R0805" value="" x="21.9075" y="9.68375" rot="MR0"/>
-<element name="R48" library="rcl" package="0207/10" value="" x="11.1125" y="1.27" rot="R225"/>
-<element name="VD24" library="diode" package="SOD80C" value="" x="13.0175" y="9.04875" rot="MR90"/>
-<element name="VT25" library="transistor-npn" package="SOT23-BEC" value="" x="10.4775" y="15.875" rot="MR90"/>
-<element name="R49" library="rcl" package="R0805" value="" x="8.255" y="12.3825" rot="MR180"/>
-<element name="R50" library="rcl" package="0207/12" value="" x="9.8425" y="13.335" rot="R225"/>
-<element name="VD25" library="diode" package="SOD80C" value="" x="6.985" y="16.51" rot="MR90"/>
-<element name="VT26" library="transistor-npn" package="SOT23-BEC" value="" x="-9.8425" y="26.67" rot="MR90"/>
+<element name="R38" library="rcl" package="0207/12" value="" x="48.895" y="-3.175" smashed="yes" rot="R45">
+<attribute name="NAME" x="48.20210625" y="-4.749734375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="47.7634875" y="-5.276378125" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD19" library="diode" package="SOD80C" value="" x="44.45" y="-1.27" smashed="yes" rot="MR180">
+<attribute name="NAME" x="43.8785" y="1.397" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="42.926" y="1.143" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT20" library="transistor-npn" package="SOT23-BEC" value="" x="29.845" y="-29.21" smashed="yes" rot="MR90">
+<attribute name="NAME" x="29.845" y="-31.115" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="26.67" y="-31.115" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R39" library="rcl" package="R0805" value="" x="22.86" y="4.60375" smashed="yes" rot="MR270">
+<attribute name="NAME" x="20.955" y="0.47625" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="25.4" y="5.23875" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R40" library="rcl" package="0207/12" value="" x="31.4325" y="-34.6075" smashed="yes" rot="R225">
+<attribute name="NAME" x="32.125390625" y="-33.0327625" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="32.564009375" y="-32.50611875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD20" library="diode" package="SOD80C" value="" x="26.19375" y="-28.73375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="28.67025" y="-32.98825" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="23.78075" y="-30.25775" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT21" library="transistor-npn" package="SOT23-BEC" value="" x="20.47875" y="-27.6225" smashed="yes" rot="MR90">
+<attribute name="NAME" x="20.6375" y="-24.28875" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="17.30375" y="-29.5275" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R41" library="rcl" package="R1206W" value="" x="20.32" y="3.4925" smashed="yes" rot="MR270">
+<attribute name="NAME" x="18.7325" y="4.7625" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="22.86" y="5.3975" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R42" library="rcl" package="0207/12" value="" x="18.0975" y="-33.9725" smashed="yes" rot="R225">
+<attribute name="NAME" x="18.790390625" y="-32.3977625" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="19.229009375" y="-31.87111875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD21" library="diode" package="SOD80C" value="" x="17.30375" y="-27.46375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="15.65275" y="-27.59075" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="14.89075" y="-28.98775" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT22" library="transistor-npn" package="SOT23-BEC" value="" x="14.2875" y="-20.47875" smashed="yes" rot="MR180">
+<attribute name="NAME" x="12.7" y="-23.01875" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="12.3825" y="-17.30375" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R43" library="rcl" package="R1206W" value="" x="24.13" y="-1.74625" smashed="yes" rot="MR45">
+<attribute name="NAME" x="25.694934375" y="0.2902625" size="1.27" layer="26" rot="MR225"/>
+<attribute name="VALUE" x="23.6809875" y="-4.8893375" size="1.27" layer="28" rot="MR45"/>
+</element>
+<element name="R44" library="rcl" package="0207/12" value="" x="9.8425" y="-27.94" smashed="yes" rot="R225">
+<attribute name="NAME" x="10.535390625" y="-26.3652625" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="10.974009375" y="-25.83861875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD22" library="diode" package="SOD80C" value="" x="15.24" y="-17.30375" smashed="yes" rot="MR180">
+<attribute name="NAME" x="12.319" y="-17.74825" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="13.716" y="-14.89075" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT23" library="transistor-npn" package="SOT23-BEC" value="" x="16.51" y="-11.58875" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.415" y="-9.04875" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.415" y="-14.76375" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R45" library="rcl" package="R1206W" value="" x="22.70125" y="-5.715" smashed="yes" rot="MR315">
+<attribute name="NAME" x="22.197765625" y="-3.787434375" size="1.27" layer="26" rot="MR315"/>
+<attribute name="VALUE" x="25.844340625" y="-6.1640125" size="1.27" layer="28" rot="MR315"/>
+</element>
+<element name="R46" library="rcl" package="0207/12" value="" x="9.525" y="-14.76375" smashed="yes" rot="R225">
+<attribute name="NAME" x="10.217890625" y="-13.1890125" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="10.656509375" y="-12.66236875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD23" library="diode" package="SOD80C" value="" x="17.30375" y="-14.76375" smashed="yes" rot="MR0">
+<attribute name="NAME" x="14.38275" y="-15.20825" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="18.82775" y="-17.17675" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT24" library="transistor-npn" package="SOT23-BEC" value="" x="17.145" y="9.04875" smashed="yes" rot="MR180">
+<attribute name="NAME" x="15.24" y="12.54125" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="15.24" y="12.22375" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R47" library="rcl" package="R0805" value="" x="21.9075" y="9.68375" smashed="yes" rot="MR0">
+<attribute name="NAME" x="23.8125" y="7.14375" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="22.5425" y="7.14375" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R48" library="rcl" package="0207/10" value="" x="11.1125" y="1.27" smashed="yes" rot="R225">
+<attribute name="NAME" x="11.805390625" y="2.665128125" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="12.261971875" y="3.317496875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD24" library="diode" package="SOD80C" value="" x="13.0175" y="9.04875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="11.557" y="9.93775" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="10.6045" y="7.52475" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT25" library="transistor-npn" package="SOT23-BEC" value="" x="10.4775" y="15.875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.89" y="19.05" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="7.3025" y="13.97" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R49" library="rcl" package="R0805" value="" x="8.255" y="12.3825" smashed="yes" rot="MR180">
+<attribute name="NAME" x="6.985" y="11.1125" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="7.62" y="14.9225" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R50" library="rcl" package="0207/12" value="" x="9.8425" y="13.335" smashed="yes" rot="R225">
+<attribute name="NAME" x="10.535390625" y="14.909734375" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="10.974009375" y="15.436378125" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD25" library="diode" package="SOD80C" value="" x="6.985" y="16.51" smashed="yes" rot="MR90">
+<attribute name="NAME" x="8.1915" y="19.558" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="4.572" y="14.986" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT26" library="transistor-npn" package="SOT23-BEC" value="" x="-9.8425" y="26.67" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-11.43" y="30.1625" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-13.0175" y="24.765" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="R51" library="rcl" package="R0805" value="" x="-16.51" y="25.0825" rot="MR180"/>
-<element name="R52" library="rcl" package="0207/12" value="" x="-6.0325" y="20.955" rot="R270"/>
-<element name="VD26" library="diode" package="SOD80C" value="" x="-13.335" y="26.67" rot="MR90"/>
-<element name="VT27" library="transistor-npn" package="SOT23-BEC" value="" x="-46.0375" y="33.02" rot="MR90"/>
-<element name="R53" library="rcl" package="R0805" value="" x="-43.815" y="29.21" rot="MR0"/>
-<element name="R54" library="rcl" package="0207/12" value="" x="-46.99" y="37.1475" rot="R135"/>
-<element name="VD27" library="diode" package="SOD80C" value="" x="-49.53" y="33.9725" rot="MR90"/>
+<element name="R52" library="rcl" package="0207/12" value="" x="-6.0325" y="20.955" smashed="yes" rot="R270">
+<attribute name="NAME" x="-6.5405" y="22.225" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="-6.7183" y="23.241" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="VD26" library="diode" package="SOD80C" value="" x="-13.335" y="26.67" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-16.002" y="26.416" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-15.748" y="25.146" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT27" library="transistor-npn" package="SOT23-BEC" value="" x="-46.0375" y="33.02" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-47.625" y="36.5125" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-49.2125" y="31.115" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R53" library="rcl" package="R0805" value="" x="-43.815" y="29.21" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-42.2275" y="26.3525" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-43.18" y="26.67" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R54" library="rcl" package="0207/12" value="" x="-46.99" y="37.1475" smashed="yes" rot="R135">
+<attribute name="NAME" x="-48.5647375" y="37.84039375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-44.88861875" y="36.0159875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD27" library="diode" package="SOD80C" value="" x="-49.53" y="33.9725" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-48.641" y="37.0205" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-51.943" y="32.4485" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="VT28" library="transistor-npn" package="SOT23-BEC" value="" x="-32.0675" y="34.925" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-29.5275" y="36.195" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="-35.2425" y="33.02" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="R55" library="rcl" package="R0805" value="" x="-24.13" y="32.0675" smashed="yes" rot="MR0">
-<attribute name="NAME" x="-23.8125" y="34.6075" size="1.27" layer="26" rot="MR180"/>
+<attribute name="NAME" x="-25.4" y="34.6075" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="-23.495" y="29.5275" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="R56" library="rcl" package="0207/10" value="" x="-32.7025" y="37.1475" rot="R135"/>
+<element name="R56" library="rcl" package="0207/10" value="" x="-32.7025" y="37.1475" smashed="yes" rot="R135">
+<attribute name="NAME" x="-34.41513125" y="37.84039375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-30.655" y="35.998025" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
 <element name="VD28" library="diode" package="SOD80C" value="" x="-35.56" y="35.56" smashed="yes" rot="MR90">
 <attribute name="NAME" x="-36.8935" y="35.1155" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="-37.973" y="34.036" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="VT29" library="transistor-npn" package="SOT23-BEC" value="" x="-16.8275" y="33.3375" rot="MR90"/>
-<element name="R57" library="rcl" package="R0805" value="" x="-20.0025" y="28.8925" rot="MR90"/>
-<element name="R58" library="rcl" package="0207/12" value="" x="-18.415" y="36.5125" rot="R135"/>
-<element name="VD29" library="diode" package="SOD80C" value="" x="-20.32" y="33.3375" rot="MR90"/>
-<element name="VT30" library="transistor-npn" package="SOT23-BEC" value="" x="-11.1125" y="18.0975" rot="MR270"/>
-<element name="R59" library="rcl" package="R0805" value="" x="-16.8275" y="20.6375" rot="MR180"/>
-<element name="R60" library="rcl" package="0207/12" value="" x="-9.8425" y="13.6525" rot="R315"/>
-<element name="VD30" library="diode" package="SOD80C" value="" x="-7.62" y="19.05" rot="MR270"/>
-<element name="VT31" library="transistor-npn" package="SOT23-BEC" value="" x="-13.97" y="9.525" rot="MR180"/>
+<element name="VT29" library="transistor-npn" package="SOT23-BEC" value="" x="-16.8275" y="33.3375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-16.51" y="36.83" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-20.0025" y="31.4325" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R57" library="rcl" package="R0805" value="" x="-20.0025" y="28.8925" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-18.7325" y="28.2575" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-22.5425" y="28.2575" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R58" library="rcl" package="0207/12" value="" x="-18.415" y="36.5125" smashed="yes" rot="R135">
+<attribute name="NAME" x="-19.9897375" y="37.20539375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-16.31361875" y="35.3809875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD29" library="diode" package="SOD80C" value="" x="-20.32" y="33.3375" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-20.066" y="36.068" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-22.733" y="31.8135" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT30" library="transistor-npn" package="SOT23-BEC" value="" x="-11.1125" y="18.0975" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-9.8425" y="20.955" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-7.9375" y="20.0025" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R59" library="rcl" package="R0805" value="" x="-16.8275" y="20.6375" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-15.5575" y="18.0975" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-17.4625" y="23.1775" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R60" library="rcl" package="0207/12" value="" x="-9.8425" y="13.6525" smashed="yes" rot="R315">
+<attribute name="NAME" x="-11.417234375" y="14.345390625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-11.943878125" y="14.784009375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD30" library="diode" package="SOD80C" value="" x="-7.62" y="19.05" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-10.0965" y="23.622" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-5.207" y="20.574" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT31" library="transistor-npn" package="SOT23-BEC" value="" x="-13.97" y="9.525" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-15.875" y="8.5725" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-15.875" y="12.7" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R61" library="rcl" package="R0805" value="" x="-16.51" y="14.605" rot="MR270"/>
-<element name="R62" library="rcl" package="0207/12" value="" x="-9.2075" y="-0.9525" rot="R315"/>
-<element name="VD31" library="diode" package="SOD80C" value="" x="-13.335" y="12.7" rot="MR180"/>
-<element name="VT32" library="transistor-npn" package="SOT23-BEC" value="" x="-14.9225" y="-5.08" rot="MR270"/>
-<element name="R63" library="rcl" package="R0805" value="" x="-14.2875" y="0" rot="MR180"/>
-<element name="R64" library="rcl" package="0207/12" value="" x="-13.6525" y="-10.4775" rot="R315"/>
-<element name="VD32" library="diode" package="SOD80C" value="" x="-12.065" y="-2.2225" rot="MR180"/>
-<element name="VT33" library="transistor-npn" package="SOT23-BEC" value="" x="-14.2875" y="-20.955" rot="MR180"/>
+<element name="R62" library="rcl" package="0207/12" value="" x="-9.2075" y="-0.9525" smashed="yes" rot="R315">
+<attribute name="NAME" x="-10.782234375" y="-0.259609375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-11.308878125" y="0.179009375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD31" library="diode" package="SOD80C" value="" x="-13.335" y="12.7" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-15.1765" y="15.0495" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-14.859" y="15.113" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT32" library="transistor-npn" package="SOT23-BEC" value="" x="-14.9225" y="-5.08" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-16.1925" y="-3.4925" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-11.7475" y="-3.175" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R63" library="rcl" package="R0805" value="" x="-14.2875" y="0" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-14.2875" y="0.9525" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-14.9225" y="2.54" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R64" library="rcl" package="0207/12" value="" x="-13.6525" y="-10.4775" smashed="yes" rot="R315">
+<attribute name="NAME" x="-15.227234375" y="-9.78460625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-15.753878125" y="-9.3459875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD32" library="diode" package="SOD80C" value="" x="-12.065" y="-2.2225" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-12.0015" y="0.4445" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-13.589" y="0.1905" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT33" library="transistor-npn" package="SOT23-BEC" value="" x="-14.2875" y="-20.955" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-13.0175" y="-21.9075" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-16.1925" y="-17.78" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R65" library="rcl" package="R0805" value="" x="-15.875" y="-13.97" rot="MR270"/>
-<element name="R66" library="rcl" package="0207/12" value="" x="-9.2075" y="-28.8925" rot="R315"/>
-<element name="VD33" library="diode" package="SOD80C" value="" x="-14.2875" y="-17.78" rot="MR180"/>
-<element name="VT34" library="transistor-npn" package="SOT23-BEC" value="" x="-20.6375" y="-27.94" rot="MR270"/>
-<element name="R67" library="rcl" package="R0805" value="" x="-17.62125" y="-23.33625" rot="MR270"/>
-<element name="R68" library="rcl" package="0207/12" value="" x="-19.685" y="-32.385" rot="R315"/>
-<element name="VD34" library="diode" package="SOD80C" value="" x="-17.4625" y="-27.94" rot="MR270"/>
-<element name="VT35" library="transistor-npn" package="SOT23-BEC" value="" x="-35.8775" y="-29.21" rot="MR0"/>
-<element name="R69" library="rcl" package="R0805" value="" x="-32.0675" y="-28.8925" rot="MR270"/>
-<element name="R70" library="rcl" package="0207/12" value="" x="-33.9725" y="-32.0675" rot="R315"/>
-<element name="VD35" library="diode" package="SOD80C" value="" x="-35.8775" y="-33.02" rot="MR0"/>
-<element name="VT36" library="transistor-npn" package="SOT23-BEC" value="" x="-46.355" y="-21.9075" rot="MR0"/>
-<element name="R71" library="rcl" package="R0805" value="" x="-41.91" y="-24.4475" rot="MR270"/>
-<element name="R72" library="rcl" package="0207/12" value="" x="-52.07" y="-13.97" rot="R135"/>
-<element name="VD36" library="diode" package="SOD80C" value="" x="-46.355" y="-25.0825" rot="MR0"/>
+<element name="R66" library="rcl" package="0207/12" value="" x="-9.2075" y="-28.8925" smashed="yes" rot="R315">
+<attribute name="NAME" x="-10.782234375" y="-28.19960625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-11.308878125" y="-27.7609875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD33" library="diode" package="SOD80C" value="" x="-14.2875" y="-17.78" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-11.3665" y="-17.653" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-15.8115" y="-15.367" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT34" library="transistor-npn" package="SOT23-BEC" value="" x="-20.6375" y="-27.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-20.6375" y="-26.035" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-17.4625" y="-26.035" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R67" library="rcl" package="R0805" value="" x="-17.62125" y="-23.33625" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-18.89125" y="-20.47875" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-15.08125" y="-22.70125" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R68" library="rcl" package="0207/12" value="" x="-19.685" y="-32.385" smashed="yes" rot="R315">
+<attribute name="NAME" x="-21.259734375" y="-31.69210625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-21.786378125" y="-31.2534875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD34" library="diode" package="SOD80C" value="" x="-17.4625" y="-27.94" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-14.478" y="-26.0985" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-15.0495" y="-26.416" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT35" library="transistor-npn" package="SOT23-BEC" value="" x="-35.8775" y="-29.21" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-38.1" y="-25.4" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-33.9725" y="-32.385" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R69" library="rcl" package="R0805" value="" x="-32.0675" y="-28.8925" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-32.7025" y="-26.9875" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-29.5275" y="-28.2575" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R70" library="rcl" package="0207/12" value="" x="-33.9725" y="-32.0675" smashed="yes" rot="R315">
+<attribute name="NAME" x="-35.547234375" y="-31.37460625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-36.073878125" y="-30.9359875" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD35" library="diode" package="SOD80C" value="" x="-35.8775" y="-33.02" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-38.0365" y="-34.4805" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-34.3535" y="-35.433" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT36" library="transistor-npn" package="SOT23-BEC" value="" x="-46.355" y="-21.9075" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-45.085" y="-19.685" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-44.45" y="-25.0825" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R71" library="rcl" package="R0805" value="" x="-41.91" y="-24.4475" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-39.37" y="-22.5425" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-39.37" y="-23.8125" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R72" library="rcl" package="0207/12" value="" x="-52.07" y="-13.97" smashed="yes" rot="R135">
+<attribute name="NAME" x="-50.4952625" y="-14.662890625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="-49.96861875" y="-15.101509375" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
+<element name="VD36" library="diode" package="SOD80C" value="" x="-46.355" y="-25.0825" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-48.1965" y="-26.543" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-44.831" y="-27.4955" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="VT37" library="transistor-npn" package="SOT23-BEC" value="" x="-46.6725" y="5.08" rot="MR90"/>
 <element name="R73" library="rcl" package="R0805" value="" x="-46.99" y="-2.54" rot="MR90"/>
-<element name="R74" library="rcl" package="0207/12" value="" x="-47.625" y="9.525" rot="R135"/>
+<element name="R74" library="rcl" package="0207/12" value="" x="-47.625" y="9.525" smashed="yes" rot="R135">
+<attribute name="NAME" x="-46.3677625" y="9.14960625" size="1.27" layer="25" ratio="10" rot="R135"/>
+<attribute name="VALUE" x="-45.52361875" y="8.3934875" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
 <element name="VD37" library="diode" package="SOD80C" value="" x="-48.895" y="0.635" rot="MR0"/>
 <element name="VT38" library="transistor-npn" package="SOT23-BEC" value="" x="-46.0375" y="16.8275" rot="MR0"/>
 <element name="R75" library="rcl" package="R1206W" value="" x="-44.7675" y="9.525" rot="MR90"/>
-<element name="R76" library="rcl" package="0207/10" value="" x="-48.5775" y="24.4475" rot="R135"/>
+<element name="R76" library="rcl" package="0207/10" value="" x="-48.5775" y="24.4475" smashed="yes" rot="R135">
+<attribute name="NAME" x="-50.29013125" y="25.14039375" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-46.53" y="23.298025" size="1.27" layer="27" ratio="10" rot="R135"/>
+</element>
 <element name="VD38" library="diode" package="SOD80C" value="" x="-46.0375" y="13.6525" rot="MR0"/>
-<element name="VT39" library="transistor-npn" package="SOT23-BEC" value="" x="-38.735" y="-3.4925" rot="MR0"/>
+<element name="VT39" library="transistor-npn" package="SOT23-BEC" value="" x="-38.735" y="-3.4925" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-40.9575" y="-5.08" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-36.83" y="-6.6675" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="R77" library="rcl" package="R0805" value="" x="-33.3375" y="-2.54" rot="MR0"/>
-<element name="R78" library="rcl" package="0207/15" value="" x="-20.955" y="10.795" rot="R315"/>
-<element name="VD39" library="diode" package="SOD80C" value="" x="-38.735" y="-6.985" rot="MR0"/>
-<element name="VT40" library="transistor-npn" package="SOT23-BEC" value="" x="-101.3775" y="33.17875" rot="MR270"/>
+<element name="R78" library="rcl" package="0207/15" value="" x="-20.955" y="10.795" smashed="yes" rot="R315">
+<attribute name="NAME" x="-22.212234375" y="11.170390625" size="1.27" layer="25" ratio="10" rot="R315"/>
+<attribute name="VALUE" x="-23.056378125" y="11.926509375" size="1.27" layer="27" ratio="10" rot="R315"/>
+</element>
+<element name="VD39" library="diode" package="SOD80C" value="" x="-38.735" y="-6.985" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-41.656" y="-7.4295" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-37.211" y="-9.398" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT40" library="transistor-npn" package="SOT23-BEC" value="" x="-101.3775" y="33.17875" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-99.85375" y="35.3375" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-98.2025" y="35.08375" size="1.27" layer="28" rot="MR270"/>
+</element>
 <element name="R79" library="rcl" package="R0805" value="" x="-95.18625" y="35.08375" rot="MR0"/>
-<element name="R80" library="rcl" package="0207/12" value="" x="-99.67875" y="36.30625" rot="R45"/>
-<element name="VD40" library="diode" package="SOD80C" value="" x="-98.2025" y="33.3375" rot="MR270"/>
-<element name="VT41" library="transistor-npn" package="SOT23-BEC" value="" x="-87.56625" y="32.54375" rot="MR270"/>
+<element name="R80" library="rcl" package="0207/12" value="" x="-99.67875" y="36.30625" smashed="yes" rot="R45">
+<attribute name="NAME" x="-100.371640625" y="34.7315125" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-100.810259375" y="34.20486875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD40" library="diode" package="SOD80C" value="" x="-98.2025" y="33.3375" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-98.4885" y="37.1155" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-95.7895" y="34.8615" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT41" library="transistor-npn" package="SOT23-BEC" value="" x="-87.56625" y="32.54375" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-86.83625" y="34.54375" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-84.39125" y="34.44875" size="1.27" layer="28" rot="MR270"/>
+</element>
 <element name="R81" library="rcl" package="R0805" value="" x="-82.07375" y="30.09875" rot="MR90"/>
-<element name="R82" library="rcl" package="0207/12" value="" x="-86.1375" y="35.8775" rot="R45"/>
-<element name="VD41" library="diode" package="SOD80C" value="" x="-84.39125" y="31.75" rot="MR270"/>
-<element name="VT42" library="transistor-npn" package="SOT23-BEC" value="" x="-76.74" y="34.925" rot="MR90"/>
+<element name="R82" library="rcl" package="0207/12" value="" x="-86.1375" y="35.8775" smashed="yes" rot="R45">
+<attribute name="NAME" x="-86.830390625" y="34.3027625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-87.269009375" y="33.77611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD41" library="diode" package="SOD80C" value="" x="-84.39125" y="31.75" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-83.8835" y="27.74925" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-81.97825" y="33.274" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT42" library="transistor-npn" package="SOT23-BEC" value="" x="-76.74" y="34.925" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-78.105" y="31.655" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-79.915" y="33.02" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="R83" library="rcl" package="R0805" value="" x="-78.58125" y="22.16125" rot="MR90"/>
-<element name="R84" library="rcl" package="0207/12" value="" x="-70.58" y="37.465" rot="R45"/>
-<element name="VD42" library="diode" package="SOD80C" value="" x="-80.39125" y="35.71875" rot="MR90"/>
-<element name="VT43" library="transistor-npn" package="SOT23-BEC" value="" x="-72.86625" y="23.4" rot="MR180"/>
+<element name="R84" library="rcl" package="0207/12" value="" x="-70.58" y="37.465" smashed="yes" rot="R45">
+<attribute name="NAME" x="-71.272890625" y="35.8902625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-71.711509375" y="35.36361875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD42" library="diode" package="SOD80C" value="" x="-80.39125" y="35.71875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-83.05825" y="34.19475" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-82.80425" y="34.19475" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT43" library="transistor-npn" package="SOT23-BEC" value="" x="-72.86625" y="23.4" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-72.54875" y="21.1775" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-74.77125" y="26.575" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R85" library="rcl" package="R0805" value="" x="-74.2" y="14.9225" rot="MR90"/>
-<element name="R86" library="rcl" package="0207/12" value="" x="-69.6275" y="24.4475" rot="R45"/>
-<element name="VD43" library="diode" package="SOD80C" value="" x="-72.54875" y="27.05125" rot="MR180"/>
-<element name="VT44" library="transistor-npn" package="SOT23-BEC" value="" x="-71.85" y="4.7625" rot="MR270"/>
-<element name="R87" library="rcl" package="R0805" value="" x="-74.45375" y="7.525" rot="MR180"/>
-<element name="R88" library="rcl" package="0207/12" value="" x="-70.8975" y="9.2075" rot="R45"/>
-<element name="VD44" library="diode" package="SOD80C" value="" x="-68.3575" y="5.08" rot="MR270"/>
-<element name="VT45" library="transistor-npn" package="SOT23-BEC" value="" x="-74.295" y="-4.54" rot="MR180"/>
-<element name="R89" library="rcl" package="R0805" value="" x="-80.645" y="1.81" rot="MR270"/>
-<element name="R90" library="rcl" package="0207/12" value="" x="-69.6275" y="-3.4925" rot="R45"/>
-<element name="VD45" library="diode" package="SOD80C" value="" x="-74.295" y="-1.0475" rot="MR180"/>
-<element name="VT46" library="transistor-npn" package="SOT23-BEC" value="" x="-76.26375" y="-26.82875" rot="MR0"/>
-<element name="R91" library="rcl" package="0207/12" value="" x="-68.485" y="-16.51" rot="R225"/>
-<element name="R92" library="rcl" package="0207/12" value="" x="-79.94625" y="-27.94" rot="R225"/>
-<element name="VD46" library="diode" package="SOD80C" value="" x="-77.0575" y="-30.32125" rot="MR0"/>
-<element name="VT47" library="transistor-npn" package="SOT23-BEC" value="" x="-84.6775" y="-21.9075" rot="MR0"/>
+<element name="R86" library="rcl" package="0207/12" value="" x="-69.6275" y="24.4475" smashed="yes" rot="R45">
+<attribute name="NAME" x="-70.320390625" y="22.8727625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-70.759009375" y="22.34611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD43" library="diode" package="SOD80C" value="" x="-72.54875" y="27.05125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-74.70775" y="29.40075" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-74.07275" y="29.46425" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT44" library="transistor-npn" package="SOT23-BEC" value="" x="-71.85" y="4.7625" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-72.0725" y="1.6825" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-68.675" y="6.6675" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R87" library="rcl" package="R0805" value="" x="-74.45375" y="7.525" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-75.72375" y="10.065" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-75.08875" y="10.065" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R88" library="rcl" package="0207/12" value="" x="-70.8975" y="9.2075" smashed="yes" rot="R45">
+<attribute name="NAME" x="-71.590390625" y="7.6327625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-72.029009375" y="7.10611875" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD44" library="diode" package="SOD80C" value="" x="-68.3575" y="5.08" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-66.707" y="2.921" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-65.9445" y="6.604" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VT45" library="transistor-npn" package="SOT23-BEC" value="" x="-74.295" y="-4.54" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-77.1525" y="-4.985" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-76.2" y="-1.365" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R89" library="rcl" package="R0805" value="" x="-80.645" y="1.81" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-81.915" y="3.3975" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-78.105" y="2.445" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R90" library="rcl" package="0207/12" value="" x="-69.6275" y="-3.4925" smashed="yes" rot="R45">
+<attribute name="NAME" x="-70.320390625" y="-5.067234375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-70.759009375" y="-5.593878125" size="1.27" layer="27" ratio="10" rot="R45"/>
+</element>
+<element name="VD45" library="diode" package="SOD80C" value="" x="-74.295" y="-1.0475" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-77.216" y="-1.937" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-75.819" y="1.3655" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="VT46" library="transistor-npn" package="SOT23-BEC" value="" x="-76.26375" y="-26.82875" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-77.53375" y="-25.24125" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-74.35875" y="-30.00375" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R91" library="rcl" package="0207/12" value="" x="-68.485" y="-16.51" smashed="yes" rot="R225">
+<attribute name="NAME" x="-67.79210625" y="-14.9352625" size="1.27" layer="25" ratio="10" rot="R225"/>
+<attribute name="VALUE" x="-67.3534875" y="-14.40861875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="R92" library="rcl" package="0207/12" value="" x="-79.94625" y="-27.94" smashed="yes" rot="R225">
+<attribute name="NAME" x="-80.76664375" y="-29.5147375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-78.8147375" y="-25.83861875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD46" library="diode" package="SOD80C" value="" x="-77.0575" y="-30.32125" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-79.9785" y="-30.76575" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-75.5335" y="-32.73425" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT47" library="transistor-npn" package="SOT23-BEC" value="" x="-84.6775" y="-21.9075" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-87.2175" y="-21.2725" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-82.7725" y="-25.0825" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="R93" library="rcl" package="R0805" value="" x="-81.21625" y="-20.955" rot="MR270"/>
-<element name="R94" library="rcl" package="0207/12" value="" x="-89.15375" y="-23.495" rot="R225"/>
-<element name="VD47" library="diode" package="SOD80C" value="" x="-84.995" y="-25.4" rot="MR0"/>
-<element name="VT48" library="transistor-npn" package="SOT23-BEC" value="" x="-100.235" y="-29.36875" rot="MR225"/>
+<element name="R94" library="rcl" package="0207/12" value="" x="-89.15375" y="-23.495" smashed="yes" rot="R225">
+<attribute name="NAME" x="-89.97414375" y="-25.3872375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-88.0222375" y="-21.39361875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD47" library="diode" package="SOD80C" value="" x="-84.995" y="-25.4" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-83.471" y="-28.3845" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-83.471" y="-27.813" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT48" library="transistor-npn" package="SOT23-BEC" value="" x="-100.235" y="-29.36875" smashed="yes" rot="MR225">
+<attribute name="NAME" x="-102.810921875" y="-27.78125" size="1.27" layer="26" rot="MR45"/>
+<attribute name="VALUE" x="-99.336975" y="-25.776646875" size="1.27" layer="28" rot="MR225"/>
+</element>
 <element name="R95" library="rcl" package="R0805" value="" x="-95.40875" y="-20.7325" rot="MR270"/>
-<element name="R96" library="rcl" package="0207/12" value="" x="-102.0125" y="-35.8775" rot="R225"/>
-<element name="VD48" library="diode" package="SOD80C" value="" x="-98.0125" y="-26.82875" rot="MR225"/>
-<element name="VT49" library="transistor-npn" package="SOT23-BEC" value="" x="-103.12375" y="-19.20875" rot="MR90"/>
-<element name="R97" library="rcl" package="R0805" value="" x="-98.90125" y="-17.08125" rot="MR270"/>
-<element name="R98" library="rcl" package="0207/12" value="" x="-106.14" y="-26.035" rot="R225"/>
-<element name="VD49" library="diode" package="SOD80C" value="" x="-106.4575" y="-20.0025" rot="MR90"/>
-<element name="VT50" library="transistor-npn" package="SOT23-BEC" value="" x="-103.02875" y="-4.985" rot="MR180"/>
+<element name="R96" library="rcl" package="0207/12" value="" x="-102.0125" y="-35.8775" smashed="yes" rot="R225">
+<attribute name="NAME" x="-102.83289375" y="-37.7697375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-100.8809875" y="-33.77611875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD48" library="diode" package="SOD80C" value="" x="-98.0125" y="-26.82875" smashed="yes" rot="MR225">
+<attribute name="NAME" x="-101.39664375" y="-26.145659375" size="1.27" layer="26" rot="MR45"/>
+<attribute name="VALUE" x="-97.383884375" y="-24.04486875" size="1.27" layer="28" rot="MR225"/>
+</element>
+<element name="VT49" library="transistor-npn" package="SOT23-BEC" value="" x="-103.12375" y="-19.20875" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-102.07625" y="-16.76375" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-106.29875" y="-21.11375" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="R97" library="rcl" package="R0805" value="" x="-98.90125" y="-17.08125" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-100.17125" y="-15.17625" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-96.36125" y="-16.44625" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R98" library="rcl" package="0207/12" value="" x="-106.14" y="-26.035" smashed="yes" rot="R225">
+<attribute name="NAME" x="-106.64289375" y="-27.6097375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-105.0084875" y="-23.93361875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD49" library="diode" package="SOD80C" value="" x="-106.4575" y="-20.0025" smashed="yes" rot="MR90">
+<attribute name="NAME" x="-109.1245" y="-22.479" size="1.27" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="-108.8705" y="-21.5265" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="VT50" library="transistor-npn" package="SOT23-BEC" value="" x="-103.02875" y="-4.985" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-104.93375" y="-5.4925" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-104.93375" y="-1.81" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R99" library="rcl" package="R0805" value="" x="-98.2025" y="-3.01625" rot="MR270"/>
-<element name="R100" library="rcl" package="0207/12" value="" x="-106.14" y="-12.065" rot="R225"/>
-<element name="VD50" library="diode" package="SOD80C" value="" x="-103.02875" y="-1.65125" rot="MR180"/>
+<element name="R100" library="rcl" package="0207/12" value="" x="-106.14" y="-12.065" smashed="yes" rot="R225">
+<attribute name="NAME" x="-107.27789375" y="-13.9572375" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-105.0084875" y="-9.96361875" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
+<element name="VD50" library="diode" package="SOD80C" value="" x="-103.02875" y="-1.65125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-105.18775" y="1.01575" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-104.55275" y="0.76175" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="VT51" library="transistor-npn" package="SOT23-BEC" value="" x="-105.25125" y="6.7625" rot="MR180"/>
 <element name="R101" library="rcl" package="R0805" value="" x="-106.52125" y="16.76375" rot="MR0"/>
-<element name="R102" library="rcl" package="0207/12" value="" x="-106.14" y="1.905" rot="R225"/>
+<element name="R102" library="rcl" package="0207/12" value="" x="-106.14" y="1.905" smashed="yes" rot="R225">
+<attribute name="NAME" x="-107.27789375" y="0.012765625" size="1.27" layer="25" ratio="10" rot="R45"/>
+<attribute name="VALUE" x="-105.0084875" y="4.006378125" size="1.27" layer="27" ratio="10" rot="R225"/>
+</element>
 <element name="VD51" library="diode" package="SOD80C" value="" x="-105.6325" y="11.90625" rot="MR270"/>
-<element name="VT52" library="transistor-npn" package="SOT23-BEC" value="" x="-93.1225" y="2.38125" rot="MR180"/>
+<element name="VT52" library="transistor-npn" package="SOT23-BEC" value="" x="-93.1225" y="2.38125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-91.2175" y="3.01625" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-95.0275" y="5.55625" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="R103" library="rcl" package="R0805" value="" x="-94.075" y="9.36625" rot="MR270"/>
-<element name="R104" library="rcl" package="0207/15" value="" x="-91.8525" y="-8.255" rot="R270"/>
-<element name="VD52" library="diode" package="SOD80C" value="" x="-92.4875" y="5.715" rot="MR180"/>
+<element name="R104" library="rcl" package="0207/15" value="" x="-91.8525" y="-8.255" smashed="yes" rot="R270">
+<attribute name="NAME" x="-91.1545" y="-10.16" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="-92.5383" y="-5.969" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="VD52" library="diode" package="SOD80C" value="" x="-92.4875" y="5.715" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-92.424" y="8.382" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-94.0115" y="8.128" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="ISP" library="con-lstb" package="MA03-2" value="" x="25.7075" y="-15.905" rot="R270"/>
 <element name="Q1" library="crystal" package="HC49U70" value="" x="35.1325" y="-13.6925" rot="R245">
 <attribute name="OC_NEWARK" value="unknown" x="35.1325" y="-13.6925" size="1.778" layer="27" rot="R245" display="off"/>
@@ -2513,8 +3028,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MF" value="" x="35.1325" y="-13.6925" size="1.778" layer="27" rot="R245" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="35.1325" y="-13.6925" size="1.778" layer="27" rot="R245" display="off"/>
 </element>
-<element name="C3" library="rcl" package="C0805" value="" x="33.17875" y="-13.97" rot="MR180"/>
-<element name="C4" library="rcl" package="C0805" value="" x="33.3375" y="-11.7475" rot="MR180"/>
+<element name="C3" library="rcl" package="C0805" value="" x="33.17875" y="-13.97" smashed="yes" rot="MR180">
+<attribute name="NAME" x="31.27375" y="-14.2875" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="31.90875" y="-11.43" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C4" library="rcl" package="C0805" value="" x="33.3375" y="-11.7475" smashed="yes" rot="MR180">
+<attribute name="NAME" x="37.465" y="-11.1125" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="32.0675" y="-9.2075" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="Z1" library="zq" package="FC-12M" value="32768" x="55.245" y="-12.7" rot="R225"/>
 <element name="BT1" library="SparkFun-Batteries" package="BATTCOM_20MM_PTH" value="2032 3v" x="58.89625" y="-36.195" rot="R350">
 <attribute name="SF_SKU" value="PRT-00783" x="58.89625" y="-36.195" size="1.778" layer="27" rot="R350" display="off"/>
@@ -2525,7 +3046,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="66.56" y="-12.8825" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="R107" library="rcl" package="R0805" value="10k" x="62" y="-23.76125" smashed="yes" rot="MR0">
-<attribute name="NAME" x="62.9525" y="-26.1425" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="60.555" y="-25.2925" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="62.635" y="-26.30125" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="R108" library="rcl" package="R0805" value="10k" x="62.0475" y="-21.3" smashed="yes" rot="MR0">
@@ -2536,48 +3057,96 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="63.02375" y="-13.81125" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="62.38875" y="-17.4625" size="1.27" layer="28" rot="MR0"/>
 </element>
-<element name="C6" library="rcl" package="C0805" value="" x="33.655" y="-19.05" rot="MR270"/>
+<element name="C6" library="rcl" package="C0805" value="" x="33.655" y="-19.05" smashed="yes" rot="MR270">
+<attribute name="NAME" x="32.385" y="-21.59" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="36.195" y="-17.78" size="1.27" layer="28" rot="MR270"/>
+</element>
 <element name="J1" library="rcl" package="R1206" value="" x="28.8925" y="-10.795" smashed="yes" rot="MR180">
 <attribute name="NAME" x="27.6225" y="-8.5725" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="27.6225" y="-8.255" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="J2" library="rcl" package="R1206" value="" x="31.75" y="-17.78" rot="MR90"/>
+<element name="J2" library="rcl" package="R1206" value="" x="31.75" y="-17.78" smashed="yes" rot="MR90">
+<attribute name="NAME" x="30.1625" y="-20.0025" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="29.21" y="-19.05" size="1.27" layer="28" rot="MR90"/>
+</element>
 <element name="R109" library="rcl" package="R0805" value="10k" x="33.655" y="-23.8125" smashed="yes" rot="MR270">
-<attribute name="NAME" x="35.8775" y="-21.59" size="1.27" layer="26" rot="MR270"/>
+<attribute name="NAME" x="35.8775" y="-23.1775" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="36.195" y="-21.9075" size="1.27" layer="28" rot="MR270"/>
 </element>
 <element name="J3" library="in3wlbr" package="05" value="J5MM" x="55.245" y="-19.20875" smashed="yes" rot="R355">
 <attribute name="NAME" x="54.33013125" y="-17.68464375" size="1.27" layer="25" ratio="10" rot="R355"/>
 </element>
 <element name="DD1A" library="DS3231_industrialberry" package="SOIC-16W" value="" x="59.84875" y="-34.6075" smashed="yes" rot="MR0">
-<attribute name="NAME" x="70.485" y="-29.68625" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="70.485" y="-30.95625" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="52.22875" y="-37.7825" size="1.27" layer="28" rot="MR90"/>
 </element>
 <element name="J4" library="rcl" package="R1206W" value="" x="68.42125" y="-21.43125" rot="MR0"/>
-<element name="J5" library="rcl" package="R1206W" value="" x="45.4025" y="-30.48" rot="MR270"/>
-<element name="C7" library="rcl" package="C0805" value="" x="67.78625" y="-33.17875" rot="MR0"/>
+<element name="J5" library="rcl" package="R1206W" value="" x="45.4025" y="-30.48" smashed="yes" rot="MR270">
+<attribute name="NAME" x="46.99" y="-29.5275" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="47.9425" y="-28.575" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C7" library="rcl" package="C0805" value="" x="67.78625" y="-33.17875" smashed="yes" rot="MR0">
+<attribute name="NAME" x="69.69125" y="-32.54375" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="69.05625" y="-35.71875" size="1.27" layer="28" rot="MR0"/>
+</element>
 <element name="C8" library="rcl" package="C3225" value="" x="57.62625" y="-25.87625" smashed="yes" rot="MR0">
-<attribute name="NAME" x="59.84875" y="-23.97125" size="1.27" layer="26" rot="MR0"/>
+<attribute name="NAME" x="54.76875" y="-26.51125" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="59.53125" y="-29.05125" size="1.27" layer="28" rot="MR0"/>
 </element>
 <element name="SJ1" library="jumper" package="SJ" value="" x="59.21375" y="-11.43" rot="MR55"/>
-<element name="R110" library="rcl" package="R0805" value="10k" x="63.65875" y="-42.8625" rot="MR0"/>
-<element name="R113" library="rcl" package="R0805" value="10k" x="67.78625" y="-35.40125" rot="MR180"/>
+<element name="R110" library="rcl" package="R0805" value="10k" x="63.65875" y="-42.8625" smashed="yes" rot="MR0">
+<attribute name="NAME" x="61.75375" y="-43.4975" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="64.29375" y="-45.4025" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R113" library="rcl" package="R0805" value="10k" x="67.78625" y="-35.40125" smashed="yes" rot="MR180">
+<attribute name="NAME" x="69.69125" y="-34.76625" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="67.15125" y="-32.86125" size="1.27" layer="28" rot="MR180"/>
+</element>
 <element name="J6" library="rcl" package="R1206W" value="" x="-21.9075" y="15.24" rot="MR225"/>
 <element name="C9" library="rcl" package="C0805" value="" x="-93.6625" y="19.685" rot="MR0"/>
-<element name="C10" library="rcl" package="C0805" value="" x="-90.805" y="12.065" rot="MR270"/>
+<element name="C10" library="rcl" package="C0805" value="" x="-90.805" y="12.065" smashed="yes" rot="MR270">
+<attribute name="NAME" x="-92.71" y="14.605" size="1.27" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="-88.265" y="13.335" size="1.27" layer="28" rot="MR270"/>
+</element>
 <element name="C11" library="rcl" package="C0805" value="" x="-29.845" y="13.335" rot="MR180"/>
 <element name="C12" library="rcl" package="C0805" value="" x="24.765" y="13.6525" rot="MR270"/>
 <element name="C13" library="rcl" package="C0805" value="" x="-32.385" y="20.0025" rot="MR185"/>
-<element name="VT53" library="transistor-npn" package="SOT23-BEC" value="" x="0" y="-8.5725" rot="MR0"/>
-<element name="R111" library="rcl" package="R0805" value="" x="4.445" y="-7.62" rot="MR0"/>
-<element name="R112" library="rcl" package="M0805" value="" x="1.905" y="-4.445" rot="MR135"/>
-<element name="VD53" library="diode" package="SOD80C" value="" x="0" y="-12.065" rot="MR0"/>
-<element name="VT54" library="transistor-npn" package="SOT23-BEC" value="" x="0.635" y="-22.5425" rot="MR180"/>
-<element name="R105" library="rcl" package="R0805" value="" x="-2.8575" y="-16.51" rot="MR180"/>
-<element name="R114" library="rcl" package="M0805" value="" x="1.27" y="-26.9875" rot="MR270"/>
-<element name="VD54" library="diode" package="SOD80C" value="" x="0" y="-19.05" rot="MR180"/>
-<element name="RE1" library="pinhead" package="1X01" value="" x="5.3975" y="-5.08" rot="R270"/>
+<element name="VT53" library="transistor-npn" package="SOT23-BEC" value="" x="0" y="-8.5725" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-1.905" y="-8.255" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="1.905" y="-11.7475" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R111" library="rcl" package="R0805" value="" x="4.445" y="-7.62" smashed="yes" rot="MR0">
+<attribute name="NAME" x="6.35" y="-6.985" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="5.08" y="-10.16" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="R112" library="rcl" package="M0805" value="" x="1.905" y="-4.445" smashed="yes" rot="MR135">
+<attribute name="NAME" x="-1.27" y="-4.01855" size="1.27" layer="26" rot="MR135"/>
+<attribute name="VALUE" x="-0.789075" y="-3.546971875" size="1.27" layer="28" rot="MR135"/>
+</element>
+<element name="VD53" library="diode" package="SOD80C" value="" x="0" y="-12.065" smashed="yes" rot="MR0">
+<attribute name="NAME" x="2.159" y="-14.732" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="1.524" y="-14.478" size="1.27" layer="28" rot="MR0"/>
+</element>
+<element name="VT54" library="transistor-npn" package="SOT23-BEC" value="" x="0.635" y="-22.5425" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-1.5875" y="-22.5425" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="-1.27" y="-19.3675" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R105" library="rcl" package="R0805" value="" x="-2.8575" y="-16.51" smashed="yes" rot="MR180">
+<attribute name="NAME" x="-0.9525" y="-15.875" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-3.4925" y="-13.97" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="R114" library="rcl" package="M0805" value="" x="1.27" y="-26.9875" smashed="yes" rot="MR270">
+<attribute name="NAME" x="0" y="-27.6225" size="1.27" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="3.81" y="-25.7175" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="VD54" library="diode" package="SOD80C" value="" x="0" y="-19.05" smashed="yes" rot="MR180">
+<attribute name="NAME" x="2.921" y="-20.828" size="1.27" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="-1.524" y="-16.637" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="RE1" library="pinhead" package="1X01" value="" x="5.3975" y="-5.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.3688" y="-1.0287" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="2.2225" y="-3.81" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="RE2" library="pinhead" package="1X01" value="" x="-4.445" y="-18.7325" smashed="yes" rot="R90">
 <attribute name="NAME" x="-4.0513" y="-15.7988" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="-1.27" y="-20.0025" size="1.27" layer="27" rot="R90"/>
@@ -2896,7 +3465,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-36.8275" y1="-30.31" x2="-37.5775" y2="-33.02" width="0.6096" layer="16"/>
 <wire x1="-39.685" y1="-4.5925" x2="-40.435" y2="-6.985" width="0.6096" layer="16"/>
 <wire x1="-73.345" y1="-3.44" x2="-72.595" y2="-1.0475" width="0.6096" layer="16"/>
-<wire x1="-77.21375" y1="-27.92875" x2="-78.7575" y2="-30.32125" width="0.6096" layer="16"/>
 <wire x1="46.5025" y1="21.5925" x2="49.05375" y2="20.8425" width="0.6096" layer="16"/>
 <wire x1="45.7175" y1="10.3075" x2="46.94375" y2="12.43" width="0.6096" layer="16"/>
 <wire x1="15.2375" y1="-19.37875" x2="16.045" y2="-19.37875" width="0.6096" layer="16"/>
@@ -2915,8 +3483,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="47.425" y1="34.4925" x2="47.425" y2="32.5025" width="0.6096" layer="16"/>
 <wire x1="47.425" y1="32.5025" x2="45.72" y2="30.7975" width="0.6096" layer="16"/>
 <wire x1="45.72" y1="30.7975" x2="41.75125" y2="30.7975" width="0.6096" layer="16"/>
-<wire x1="41.75125" y1="30.7975" x2="36.98875" y2="35.56" width="0.6096" layer="16"/>
-<wire x1="36.98875" y1="35.56" x2="30.7975" y2="35.8775" width="0.6096" layer="16"/>
+<wire x1="41.75125" y1="30.7975" x2="36.67125" y2="35.8775" width="0.6096" layer="16"/>
+<wire x1="36.67125" y1="35.8775" x2="30.7975" y2="35.8775" width="0.6096" layer="16"/>
 <wire x1="30.7975" y1="35.8775" x2="29.68625" y2="34.44875" width="0.6096" layer="16"/>
 <wire x1="30.52" y1="28.695" x2="29.13" y2="27.305" width="0.6096" layer="16"/>
 <wire x1="29.13" y1="27.305" x2="23.8125" y2="27.305" width="0.6096" layer="16"/>
@@ -2974,9 +3542,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-88.74125" y1="28.41625" x2="-86.78375" y2="30.37375" width="0.6096" layer="16"/>
 <wire x1="-86.78375" y1="30.37375" x2="-86.46625" y2="31.59375" width="0.6096" layer="16"/>
 <wire x1="-94.13875" y1="29.21" x2="-93.345" y2="30.00375" width="0.6096" layer="16"/>
-<wire x1="-78.74" y1="-15.39875" x2="-75.72375" y2="-18.415" width="0.6096" layer="16"/>
-<wire x1="-75.72375" y1="-18.415" x2="-64.135" y2="-18.415" width="0.6096" layer="16"/>
-<wire x1="-64.135" y1="-18.415" x2="-60.96" y2="-15.24" width="0.6096" layer="16"/>
 <wire x1="-10.4775" y1="32.0675" x2="-14.605" y2="36.195" width="0.6096" layer="16"/>
 <wire x1="-14.605" y1="36.195" x2="-17.145" y2="36.195" width="0.6096" layer="16"/>
 <wire x1="-17.145" y1="36.195" x2="-17.9275" y2="35.4125" width="0.6096" layer="16"/>
@@ -3214,16 +3779,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-36.195" y1="5.08" x2="-35.56" y2="5.08" width="0.254" layer="1"/>
 <wire x1="-83.185" y1="22.86" x2="-83.82" y2="24.13" width="0.4064" layer="16"/>
 <wire x1="-10.4775" y1="32.0675" x2="-10.4775" y2="29.9575" width="0.6096" layer="16"/>
-<wire x1="-86.695" y1="-27.605" x2="-86.695" y2="-25.4" width="0.6096" layer="16"/>
-<wire x1="-80.48625" y1="-12.7" x2="-78.74" y2="-15.39875" width="0.6096" layer="16"/>
-<wire x1="-78.74" y1="-15.39875" x2="-78.74" y2="-24.765" width="0.6096" layer="16"/>
-<wire x1="-86.695" y1="-27.605" x2="-85.725" y2="-28.575" width="0.6096" layer="16"/>
-<wire x1="-78.74" y1="-24.765" x2="-80.645" y2="-26.67" width="0.6096" layer="16"/>
-<wire x1="-80.645" y1="-26.67" x2="-80.645" y2="-28.575" width="0.6096" layer="16"/>
-<wire x1="-85.725" y1="-28.575" x2="-80.645" y2="-28.575" width="0.6096" layer="16"/>
-<wire x1="-80.645" y1="-28.575" x2="-80.645" y2="-29.845" width="0.6096" layer="16"/>
-<wire x1="-80.645" y1="-29.845" x2="-80.16875" y2="-30.32125" width="0.6096" layer="16"/>
-<wire x1="-80.16875" y1="-30.32125" x2="-78.7575" y2="-30.32125" width="0.6096" layer="16"/>
 <wire x1="-72.595" y1="-1.0475" x2="-70.75" y2="0.7975" width="0.6096" layer="16"/>
 <wire x1="-70.75" y1="0.7975" x2="-70.75" y2="0.9525" width="0.6096" layer="16"/>
 <wire x1="-70.75" y1="0.9525" x2="-70.75" y2="3.8125" width="0.6096" layer="16"/>
@@ -3316,6 +3871,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-94.615" y1="-32.7025" x2="-94.615" y2="-30.48" width="0.6096" layer="16"/>
 <wire x1="-94.615" y1="-30.48" x2="-96.81041875" y2="-28.28458125" width="0.6096" layer="16"/>
 <wire x1="-96.81041875" y1="-28.28458125" x2="-96.81041875" y2="-28.03083125" width="0.6096" layer="16"/>
+<wire x1="-78.74" y1="-24.765" x2="-78.74" y2="-20.47875" width="0.6096" layer="16"/>
+<wire x1="-80.48625" y1="-12.7" x2="-75.72375" y2="-17.4625" width="0.6096" layer="16"/>
+<wire x1="-60.96" y1="-15.24" x2="-63.1825" y2="-17.4625" width="0.6096" layer="16"/>
+<wire x1="-63.1825" y1="-17.4625" x2="-75.72375" y2="-17.4625" width="0.6096" layer="16"/>
+<wire x1="-78.74" y1="-20.47875" x2="-75.72375" y2="-17.4625" width="0.6096" layer="16"/>
+<wire x1="-78.7575" y1="-30.32125" x2="-78.7575" y2="-27.92875" width="0.6096" layer="16"/>
+<wire x1="-78.7575" y1="-27.92875" x2="-77.21375" y2="-27.92875" width="0.6096" layer="16"/>
+<wire x1="-78.7575" y1="-27.92875" x2="-79.0575" y2="-27.92875" width="0.6096" layer="16"/>
+<wire x1="-79.0575" y1="-27.92875" x2="-85.73625" y2="-27.92875" width="0.6096" layer="16"/>
+<wire x1="-85.73625" y1="-27.92875" x2="-86.695" y2="-26.97" width="0.6096" layer="16"/>
+<wire x1="-86.695" y1="-26.97" x2="-86.695" y2="-25.4" width="0.6096" layer="16"/>
+<wire x1="-78.74" y1="-24.765" x2="-79.0575" y2="-25.0825" width="0.6096" layer="16"/>
+<wire x1="-79.0575" y1="-25.0825" x2="-79.0575" y2="-27.92875" width="0.6096" layer="16"/>
 <wire x1="18.095" y1="12.7025" x2="18.0975" y2="12.7" width="0" layer="19" extent="1-16"/>
 <wire x1="21.9075" y1="-24.765" x2="23.495" y2="-21.9075" width="0" layer="19" extent="1-16"/>
 </signal>
@@ -3325,25 +3893,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="N$1">
 <contactref element="VT1" pad="C"/>
 <contactref element="R2" pad="1"/>
-<wire x1="75.322628125" y1="32.714871875" x2="73.18531875" y2="33.89718125" width="0.6096" layer="16"/>
+<wire x1="75.552625" y1="32.369871875" x2="74.712628125" y2="32.369871875" width="0.6096" layer="16"/>
+<wire x1="74.712628125" y1="32.369871875" x2="73.18531875" y2="33.89718125" width="0.6096" layer="16"/>
 </signal>
 <signal name="N$2">
 <contactref element="VT1" pad="B"/>
 <contactref element="R1" pad="2"/>
 <contactref element="VD1" pad="C"/>
 <wire x1="70.95793125" y1="34.781065625" x2="68.52541875" y2="36.034165625" width="0.6096" layer="16"/>
-<wire x1="76.2" y1="30.48" x2="73.66" y2="30.48" width="0.4064" layer="16"/>
-<wire x1="73.66" y1="30.48" x2="70.95793125" y2="33.18206875" width="0.4064" layer="16"/>
+<wire x1="75.8825" y1="30.1625" x2="73.9775" y2="30.1625" width="0.4064" layer="16"/>
+<wire x1="73.9775" y1="30.1625" x2="70.95793125" y2="33.18206875" width="0.4064" layer="16"/>
 <wire x1="70.95793125" y1="33.18206875" x2="70.95793125" y2="34.781065625" width="0.4064" layer="16"/>
-<wire x1="76.2" y1="30.48" x2="78.3" y2="32.58" width="0.4064" layer="16"/>
+<wire x1="75.8825" y1="30.1625" x2="78.3" y2="32.58" width="0.4064" layer="16"/>
 <wire x1="78.3" y1="32.58" x2="80.3325" y2="32.58" width="0.4064" layer="16"/>
 </signal>
 <signal name="A1">
 <contactref element="R2" pad="2"/>
 <contactref element="N42" pad="K"/>
 <wire x1="61.270865625" y1="41.726709375" x2="62.675075" y2="40.3225" width="0.6096" layer="16"/>
-<wire x1="62.675075" y1="40.3225" x2="64.96975" y2="40.3225" width="0.6096" layer="16"/>
-<wire x1="64.96975" y1="40.3225" x2="66.342375" y2="41.695125" width="0.6096" layer="16"/>
+<wire x1="62.675075" y1="40.3225" x2="65.544746875" y2="40.3225" width="0.6096" layer="16"/>
+<wire x1="65.544746875" y1="40.3225" x2="66.572371875" y2="41.350125" width="0.6096" layer="16"/>
 </signal>
 <signal name="A2">
 <contactref element="N43" pad="K"/>
@@ -3594,8 +4163,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="39.6875" y1="3.4925" x2="40.64" y2="4.445" width="0.4064" layer="16"/>
 <wire x1="40.64" y1="4.445" x2="40.64" y2="13.0175" width="0.4064" layer="16"/>
 <wire x1="40.64" y1="13.0175" x2="41.91" y2="14.2875" width="0.4064" layer="16"/>
-<wire x1="41.91" y1="14.2875" x2="41.91" y2="23.33875" width="0.4064" layer="16"/>
-<wire x1="41.91" y1="23.33875" x2="42.06875" y2="23.4975" width="0.4064" layer="16"/>
+<wire x1="41.91" y1="14.2875" x2="41.91" y2="17.62375" width="0.4064" layer="16"/>
+<wire x1="41.91" y1="17.62375" x2="40.48125" y2="20.005" width="0.4064" layer="16"/>
 </signal>
 <signal name="RB5">
 <contactref element="IC3" pad="1"/>
@@ -4717,13 +5286,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <signal name="RC8">
 <contactref element="IC5" pad="1"/>
 <contactref element="R67" pad="1"/>
-<wire x1="-17.62125" y1="-22.38625" x2="-17.93875" y2="-11.7202625" width="0.4064" layer="16"/>
-<wire x1="-17.93875" y1="-11.7202625" x2="-18.03174375" y2="-11.49575625" width="0.4064" layer="16" curve="45"/>
 <wire x1="-23.495" y1="1.905" x2="-23.495" y2="4.3841" width="0.4064" layer="16"/>
 <wire x1="-23.495" y1="4.3841" x2="-23.54375" y2="4.43285" width="0.4064" layer="16"/>
-<wire x1="-18.03174375" y1="-11.49575625" x2="-21.59" y2="-7.9375" width="0.4064" layer="16"/>
-<wire x1="-21.59" y1="-7.9375" x2="-21.59" y2="0" width="0.4064" layer="16"/>
+<wire x1="-18.03174375" y1="-12.13075625" x2="-21.59" y2="-8.5725" width="0.4064" layer="16"/>
+<wire x1="-21.59" y1="-8.5725" x2="-21.59" y2="0" width="0.4064" layer="16"/>
 <wire x1="-21.59" y1="0" x2="-23.495" y2="1.905" width="0.4064" layer="16"/>
+<wire x1="-18.03174375" y1="-12.13075625" x2="-18.03174375" y2="-21.84424375" width="0.4064" layer="16"/>
+<wire x1="-18.03174375" y1="-21.84424375" x2="-17.93875" y2="-22.06875" width="0.4064" layer="16" curve="45"/>
+<wire x1="-17.93875" y1="-22.06875" x2="-17.62125" y2="-22.38625" width="0.4064" layer="16"/>
 </signal>
 <signal name="RC9">
 <contactref element="IC5" pad="2"/>
@@ -5195,7 +5765,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <contactref element="R33" pad="2"/>
 <contactref element="VD17" pad="C"/>
 <wire x1="46.5025" y1="23.4925" x2="49.05375" y2="24.2425" width="0.6096" layer="16"/>
-<wire x1="46.5025" y1="23.4925" x2="42.06875" y2="25.3975" width="0.6096" layer="16"/>
+<wire x1="40.48125" y1="21.905" x2="40.48125" y2="23.8397375" width="0.4064" layer="16"/>
+<wire x1="40.48125" y1="23.8397375" x2="40.57424375" y2="24.06424375" width="0.4064" layer="16" curve="-45"/>
+<wire x1="40.57424375" y1="24.06424375" x2="41.5925" y2="25.0825" width="0.4064" layer="16"/>
+<wire x1="41.5925" y1="25.0825" x2="45.9059875" y2="25.0825" width="0.4064" layer="16"/>
+<wire x1="45.9059875" y1="25.0825" x2="46.13049375" y2="24.98950625" width="0.4064" layer="16" curve="-45"/>
+<wire x1="46.13049375" y1="24.98950625" x2="46.40950625" y2="24.71049375" width="0.4064" layer="16"/>
+<wire x1="46.40950625" y1="24.71049375" x2="46.5025" y2="24.4859875" width="0.4064" layer="16" curve="-45"/>
+<wire x1="46.5025" y1="24.4859875" x2="46.5025" y2="23.4925" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$38">
 <contactref element="VT18" pad="C"/>
