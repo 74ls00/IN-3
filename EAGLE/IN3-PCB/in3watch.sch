@@ -11254,6 +11254,8 @@ pinhead.lbr 6.4</description>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="XN4" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X13" device=""/>
 <part name="XO4" library="Разъёмы штырьковые 2.54мм" deviceset="PINHD-1X4" device=""/>
+<part name="DD1B1" library="ds1307_pcf8583" deviceset="DS1307" device="/PCF8583" value="DS1307/PCF8583"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -11334,6 +11336,8 @@ pinhead.lbr 6.4</description>
 <attribute name="NAME" x="41.91" y="178.8414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="41.91" y="176.022" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="DD1B1" gate="G$1" x="-20.32" y="152.4"/>
+<instance part="GND1" gate="1" x="-33.02" y="139.7"/>
 </instances>
 <busses>
 </busses>
@@ -11490,6 +11494,12 @@ pinhead.lbr 6.4</description>
 <pinref part="C8" gate="G$1" pin="2"/>
 <pinref part="GND66" gate="1" pin="GND"/>
 <wire x1="157.48" y1="132.08" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-33.02" y1="142.24" x2="-33.02" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="DD1B1" gate="G$1" pin="GND"/>
+<wire x1="-33.02" y1="144.78" x2="-30.48" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SEQ" class="0">
